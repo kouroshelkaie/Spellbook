@@ -1,0 +1,239 @@
+<!DOCTYPE html 5>
+<html lang="fa" lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="warcraft,worldofwarcraft,spellbook,وارکراف،وارکرفت،ووردآفوارکرفت،هورد،الاینت،wow">
+    <meta name="author" content="kourosh elkaie">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="کتاب،داستان،کتابخانه،اسپلبووک،وارکرفت">
+    <meta property="og:site_name" content="spellbook.ir">
+    <meta property="og:title" content="spellbook">
+    <meta property="og:description" content="world of warcraft story timeline in order">
+    <link rel="stylesheet" href="../style/inside pgs/insidepage.css">
+    <script src="../script/toggle.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="../script/filterSearch.js" defer></script>
+    <link rel="icon" href="../img/lsfi/13.png" type="image/gif" sizes="32x32">
+    <title>دنیای وارکرفت :  جاینا:امواج جنگ</title>
+</head>
+<body id="bdy">
+    <section class="outer-container">
+        <!-- header -->
+        <header class="header">
+            <h1 class="e-title" data-aos="fade-up" data-aos-duration="2000">JAINA:TIDES OF WAR</h1>
+            <figure>
+                <img src="../img/18-Jaina-Tides of war/banner2.jpg" class="banner-img">
+            </figure>
+            <div class="inner-container">
+                <button onclick="sidebarToggle()">
+                    <img src="../img/lsfi/icons/menu1.svg" class="sidebar-button">
+                </button>
+                <!-- header-navigation -->
+                <nav class="navigation" id="navi">
+                    <ul class="nav-menu" id="nvmn">
+                        <li class="nav-item"><a class="nav-link" href="../main.html">خانه</a></li> 
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
+                        <li class="nav-item" id="hoverable">
+                            <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
+                            <ul class="subnav-menu"  id="chro" >
+                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- sidebar -->
+            <div class="sidebar-container">
+                <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+                <ul class="sidebar-menu" id="sideUl">
+                    <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                    <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- ==================================================== -->
+        <!-- main-section -->
+        <main class="main">
+            <div class="inner-container2">
+                <section class="main-first-row clf">
+                    <div class="main-text">
+                        <div class="main-paragraphs">
+                            <h4 class="titles">کتاب نوزدهم </h4>
+                            <p class="main-contents">
+                                در حالي كه بر فراز سازه ي عظيم و بي كران چرخ مي زد سايه ي تيره اش بر خرابه ها مي افتاد. با اينكه قبلاَ هـم بـه ايـن
+                                محل آمده بود اما هنوز هم عظمت و شكوه معبد، و سازه هاي سنگي و باستاني او را تكان مـي داد. سـازه در چنـد طبقـه
+                                ساخته شده بود كه هر يك در شكوه و وقار بر تمام سازه هاي ساخته ي انسان ها و اورك ها سايه مي انداخت.
+                                رديف رديف ستون هايي كه گرداگرد سازه ي مدور دراگون ويست را فرا گرفته بودند همچون لشگري از قراولان بودند
+                                كه اطراف اين خرابه هاي غم افزا را زير نظر داشتند. چنگال هاي درازي از يخ به سمت سازه ي عظـيم دراز شـده بـود و
+                                ترك هاي شومي در ستون ها ايجاد كرده بود اما با وجود جفاي زمان و نبردهاي وحشتناكي كـه در ايـن محـل روي داده
+                                بود عمارت عظيم ويرمست بي اعتنا به آن ها با شكوه و فنا ناپذير بر پا بود ...
+                            </p>
+                            <h4 class="titles">درباره کتاب </h4>
+                            <p class="main-contents">
+                                در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند
+                                . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان
+                                 معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند،
+                                 داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی
+                                ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های
+                                 آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی
+                                 یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند
+                                 وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده
+                                 است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن
+                                ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
+                            </p>
+                            <h4 class="titles">
+                                درباره نویسنده
+                            </h4>
+                            <p class="main-contents">
+                                کریستی گلدن، نویسنده بیش از سی رمان و چند داستان کوتاه در زمینه‌های علمی تخیلی، فانتزی و وحشت است. او در آمریکا به دنیا آمده است. او نویسنده سری کتاب‌های وارکرافت است. وی هم‌اکنون با همسر و فرزندانش در کلرادو آمریکا زندگی می‌کند.
+                            </p>
+                            <h4 class="titles">
+                                دانلود نسخه انگلیسی
+                            </h4>
+                            <a href="https://www.goodreads.com/book/show/13260060-jaina-proudmoore" target="_blank">
+                                https://www.goodreads.com/book/show/13260060-jaina-proudmoore
+                            </a>
+                        </div>
+                    </div>
+                    <!-- detailes section -->
+                    <div class="main-detailes">
+                        <figure class="cover-container">
+                            <img src="../img/18-Jaina-Tides of war/cover.jpg" class="cover-img" alt="DawnOfTheAspects-coverImage">
+                        </figure>
+                        <div class="detail">
+                            <div class="clf">
+                                <div class="labels">
+                                    <label for="">عنوان </label>
+                                    <label for="">حجم فایل</label>
+                                    <label for="">تعداد صفحه</label>
+                                    <label for="">سال انتشار</label>
+                                    <label for="">ناشر</label>
+                                    <label for="">نویسنده</label>
+                                    <label for="">مترجم</label>
+                                    <label for="">ژانر</label>
+                                    <label for="">امتیاز</label>
+                                </div>
+                                <div class="values">
+                                    <div>دنیای وارکرفت :  جاینا:امواج جنگ </div>
+                                    <div>11 مگابایت</div>
+                                    <div>352</div>
+                                    <div>2012</div>
+                                    <div>
+                                        <a href="https://www.simonandschuster.com/" target="_blank">
+                                            <img src="../img/lsfi/simon-schuster-logotype.jpg" class="publisher">
+                                        </a>
+                                    </div>
+                                    <div class="author"> Christie Golden</div>
+                                    <div> مجتبی کریمی</div>
+                                    <div>
+                                        <span>فانتزی</span> ,
+                                        <span>حماسی</span> ,
+                                        <span>ماجراجویی</span>
+                                    </div>
+                                    <!-- rating star -->
+                                    <div class="rating-container">
+                                        <a href="https://www.goodreads.com/book/show/13260060-jaina-proudmoore" target="_blank">
+                                            <ul class="rating-menu">
+                                                <li class="rating-item"><img src="../img/lsfi/icons/star1.svg" alt=""></li>
+                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
+                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
+                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
+                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="../pdf src/19-Jaina-Tides of war.rar" class="download-button">download</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-sec-row ">
+                    <!-- suggestion-box -->
+                    <div class="suggestion-box clf">
+                        <div class="card" >
+                            <figure class="figure">
+                                <img src="../img/14-Wrath of the lichking/card.png" alt="" class="card-img"> 
+                                <figcaption class="fig-cap"> ARTHAS <br> WRATH OF THE LICHKING</figcaption> 
+                                <a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="card-link">کتاب آرتاس :ظهور لیچکینگ</a> 
+                            </figure>
+                        </div>
+                        <div class="card">
+                            <figure class="figure">
+                                <img src="../img/18-Jaina-Tides of war/card.png" alt="" class="card-img">
+                                <figcaption class="fig-cap">JAINA <br> TIDES OF WAR</figcaption>
+                                <a href="../inside pgs/Jaina,TidesOfWar.html" class="card-link">کتاب جاینا : امواج جنگ</a>
+                            </figure>
+                        </div>
+                        <div class="card">
+                            <figure class="figure">
+                                <img src="../img/7-Behinde the portal/card.png" alt="" class="card-img">
+                                <figcaption class="fig-cap">BEYOND THE PORTAL</figcaption>
+                                <span></span>
+                                <a href="../inside pgs/BeyondThePortal.html" class="card-link">کتاب آنسوی درگاه</a>
+                            </figure>
+                        </div>
+                        <div class="card">
+                            <figure class="figure">
+                                <img src="../img/10-lord of clans/card.png" alt="" class="card-img">
+                                <figcaption class="fig-cap">THRALL <br> LORD OF CLANS</figcaption>
+                                <a href="../inside pgs/LordOfClans.html" class="card-link">کتاب ترال : ارباب قبایل</a>
+                            </figure>
+                        </div> 
+                </section>
+            </div>
+        </main>
+        <!-- ======================================== -->
+        <!-- footer -->
+        <footer class="inner-container2 clf">
+            <div class="inner-container">
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="../main.html">
+                            <img src="../img/lsfi/13.png" alt="" class="home">
+                        </a>
+                    </li>
+                    <li class="footer-item"><a href="http://kalimdor.ir/" class="footer-link" target="_blank">کالیمدور</a></li>
+                    <li class="footer-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="footer-link"  target="_blank">کمیک ها</a></li>
+                    <li class="footer-item">
+                        <a href="#anchor" class="footer-link">کرونیکل</a>
+                    </li>
+                    <li class="footer-item"><a href="../inside pgs/shadowlands.html" class="footer-link">شدولندز</a></li>
+                </ul>
+                <a href="mailto:kourosh.elkaie@gmail.com" class="mail">kourosh.elkaie@gmail.com</a>
+            </div>
+        </footer>
+    </section>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
