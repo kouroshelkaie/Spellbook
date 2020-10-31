@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *, *:after, *:before{
+    box-sizing: inherit;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    scroll-behavior: smooth;
+  }
+  .clf::before,
+  .clf::after{
+    content: ' ';
+    display: table;
+  }
+  .clf::after{
+    content: ' ';
+    clear: both;
+  }
+  .inner-container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+  @media(max-width:768px) {
+    .inner-container2{
+      width: 95%;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+    /* fonts */
+    @font-face{
+        font-family: 'navsans';
+        src: url(../img/lsfi/fonts/navigation-sans.ttf);
+      }
+      @font-face{
+        font-family: 'iransans-reg';
+        src: url("../img/lsfi/fonts/irsns.ttf");
+      }
+      @font-face{
+        font-family: 'raleway';
+        src: url(../img/lsfi/fonts/raleway.ttf);
+      }
+      @font-face{
+        font-family: 'rezvan';
+        src: url(../img/lsfi/fonts/Rezvan.ttf);
+      }
+      @font-face{
+        font-family: 'rezvan-reg';
+        src: url(../img/lsfi/fonts/Rezvan-reg.ttf);
+      }
+      body{
+        background-color: #202020;
+        overflow-x: hidden;
+        transition: all .7s ease;
+    }
+    @media(max-width:768px) {
+      body{
+        overflow-x: hidden;
+      }
+    }
