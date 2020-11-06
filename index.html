@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -22,7 +22,53 @@
     <link rel="icon" href="img/lsfi/13.png" type="image/gif">
     <title>Spellbook</title>
 </head>
-<body>
-    
+<body id="bdy">
+    <section class="outer-container">
+        <div class="header">
+            <div class="navigation clf">
+                <a href="index.html"><img src="img/lsfi/13.png" class="nav-logo"></a>
+                <ul class="navigation-bar">
+                    <li class="nav-item"><a href="index.html" class="nav-link">خانه</a></li>
+                    <li class="nav-item"><a href="http://kalimdor.ir/" class="nav-link" target="_blank">کالیمدور</a></li>
+                    <li class="nav-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="nav-link" target="_blank">کمیک ها</a></li>
+                    <li class="nav-item" id="hvr">
+                        <a href="" class="nav-link"> کرونیکل  <i class="fa fa-chevron-down arrow"></i></a>
+                        <ul class="subnav-menu">
+                            <li class="subnav-item"><a href="pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                            <li class="subnav-item"><a href="pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">شدولندز</a></li>
+                </ul>
+                <img src="img/lsfi/icons/menu1.svg" alt="" class="sidebar-button" onclick="sidebarToggle()">
+            </div>
+        </div>
+        <!-- sidebar -->
+        <div class="sidebar-container">
+            <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+            <ul class="sidebar-menu" id="sideUl">
+                <li class="sidebar-item"><a href="inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                <li class="sidebar-item"><a href="inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                <li class="sidebar-item"><a href="inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                <li class="sidebar-item"><a href="inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                <li class="sidebar-item"><a href="inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                <li class="sidebar-item"><a href="inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                <li class="sidebar-item"><a href="inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                <li class="sidebar-item"><a href="inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                <li class="sidebar-item"><a href="inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                <li class="sidebar-item"><a href="inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                <li class="sidebar-item"><a href="inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                <li class="sidebar-item"><a href="inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                <li class="sidebar-item"><a href="inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                <li class="sidebar-item"><a href="inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                <li class="sidebar-item"><a href="inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                <li class="sidebar-item"><a href="inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                <li class="sidebar-item"><a href="inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                <li class="sidebar-item"><a href="inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                <li class="sidebar-item"><a href="inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                <li class="sidebar-item"><a href="inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
