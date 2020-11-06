@@ -1,5 +1,5 @@
-<!DOCTYPE html 5>
-<html lang="fa" lang="en" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -22,93 +22,7 @@
     <link rel="icon" href="img/lsfi/13.png" type="image/gif">
     <title>Spellbook</title>
 </head>
-<body id="bdy">
-<section class="outer-container">
-    <div class="header">
-        <div class="image-slider">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="img/12-TheDawnOfTheAspects/last.png" style="width:100%">
-                    <a href="">
-                        <h2 class="text" data-aos="fade-right" data-aos-duration="1000">DAWN OF THE ASPECTS</h2>
-                    </a>
-                </div>
-                <div class="mySlides fade">
-                    <img src="img/19-voljin/banner.jpg" style="width:100%">
-                    <a href="">
-                        <h2 class="text" data-aos="fade-up" data-aos-duration="3000">VOLJIN:SHADOW OF HORDE</h2>
-                    </a>
-                </div>
-                <div class="mySlides fade">
-                    <img src="img/14-Wrath of the lichking/banner.jpg" style="width:100%">
-                    <a href="">
-                        <h2 class="text" data-aos="fade-up" data-aos-duration="3000">RISE OF THE LICHKING</h2>
-                    </a>
-                </div>
-                <!-- next/prev buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <!-- indicators-->
-                <div class="indicators">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-            </div>
-        </div>
-        <!-- navigation -->
-        <div class="inner-container">
-            <button onclick="sidebarToggle()">
-                <img src="img/lsfi/icons/menu1.svg" class="sidebar-button">
-            </button>
-            <!-- header-navigation -->
-            <nav class="navigation" id="navi">
-                <ul class="nav-menu" id="nvmn">
-                    <li class="nav-item"><a class="nav-link" href="index.html">خانه</a></li> 
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
-                    <li class="nav-item" id="hoverable">
-                        <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
-                        <ul class="subnav-menu"  id="chro" >
-                            <li class="subnav-item"><a href="pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
-                            <li class="subnav-item"><a href="pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- sidebar -->
-    <div class="sidebar-container">
-        <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
-        <ul class="sidebar-menu" id="sideUl">
-            <li class="sidebar-item"><a href="inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
-            <li class="sidebar-item"><a href="inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
-            <li class="sidebar-item"><a href="inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
-            <li class="sidebar-item"><a href="inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
-            <li class="sidebar-item"><a href="inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
-            <li class="sidebar-item"><a href="inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
-            <li class="sidebar-item"><a href="inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
-            <li class="sidebar-item"><a href="inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
-            <li class="sidebar-item"><a href="inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
-            <li class="sidebar-item"><a href="inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
-            <li class="sidebar-item"><a href="inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
-            <li class="sidebar-item"><a href="inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
-            <li class="sidebar-item"><a href="inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
-            <li class="sidebar-item"><a href="inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
-            <li class="sidebar-item"><a href="inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
-            <li class="sidebar-item"><a href="inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
-            <li class="sidebar-item"><a href="inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
-            <li class="sidebar-item"><a href="inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
-            <li class="sidebar-item"><a href="inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
-            <li class="sidebar-item"><a href="inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
-        </ul>
-    </div>
-</section>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<body>
+    
 </body>
 </html>

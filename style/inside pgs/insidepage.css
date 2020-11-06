@@ -60,7 +60,7 @@ html{
     src: url(../../img/lsfi/fonts/Rezvan-reg.ttf);
   }
   body{
-      background-color: #202020;
+      background-color: #121212;
       overflow-x: hidden;
       transition: all .7s ease;
   }
@@ -372,7 +372,7 @@ html{
           }
         }
         .main-text{
-          background-color: #1E1E1E;
+          background-color: #202020;
           width:69%;
           color: #ffffff;
           float: right;
@@ -433,7 +433,7 @@ html{
           }
         }
         .cover-container{
-          background-color: #1E1E1E;
+          background-color: #202020;
           position: relative;
           border-radius: 3px;
           box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -495,7 +495,7 @@ html{
       
         /* detail */
         .detail{
-          background-color: #1E1E1E;
+          background-color: #202020;
           box-shadow: 0 0 5px rgba(0,0,0,0.5);
           color: #ffffff;
           padding: 0em 2.5em 1.5em;

@@ -55,7 +55,7 @@ html{
         src: url(../img/lsfi/fonts/Rezvan-reg.ttf);
       }
       body{
-        background-color: #202020;
+        background-color: #121212;
         overflow-x: hidden;
         transition: all .7s ease;
     }
@@ -71,28 +71,29 @@ html{
       max-width: 2000px;
       position: relative;
       margin: auto;
+      width: 70%;
     }
     .prev, .next {
       cursor: pointer;
       position: absolute;
       top: 50%;
       width: auto;
-      padding: 16px;
+      padding: 10px 20px;
       margin-top: -22px;
       color: white;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 20px;
       transition: 0.4s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
     }
     .next {
-        left: 0;
-
+        left: 102%;
+        top: 5%;
     }
     .prev{
-        right: 0;
-
+        left: 110%;
+        top: 5%;
     }
     .prev:hover, .next:hover {
       color: #D99023;
@@ -100,8 +101,8 @@ html{
     }
     .text {
       position: absolute;
-      font-size: 1.8em;
-      top: 25%; left: 5%;
+      font-size: .9em;
+      top: 25%; left: 100%;
       /* text-align: center; */
       font-family: 'raleway';
       font-weight: normal;
@@ -129,25 +130,29 @@ html{
     }
     .dot {
         cursor: pointer;
-        height: .6em;
-        width: .6em;
-        margin: 0 2px;
+        height: .4em;
+        width: .4em;
+        margin: 0 1em;
         background-color: #ffffff;
         border-radius: 50%;
         display: inline-block;
-        transition: background-color 0.6s ease;
+        transition: background-color 0.3s ease;
+        left: 110%;
       }
-      .active, .dot:hover {
+      .active{
+        background-color: #333333;
+      }
+      .dot:hover {
         background-color: #717171;
       }
       /* indicators */
       .indicators{
           position: absolute;
-          bottom: 0;
-          left: 0; right: 0;
-          text-align: center;
       }
-          /* navigation */
+      .navigation-bar{
+        background-color: red;
+      }
+      /* navigation */
           .navigation{
             display: table;
             position: absolute;
