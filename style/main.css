@@ -79,6 +79,11 @@ html{
         padding: .75em 3em;
         position: relative;
     }
+    @media(max-width:520px) {
+      .navigation{
+        padding: .75em 2em;
+      }
+    }
     .navigation-bar{
         display: table;
         float: right;
@@ -298,10 +303,6 @@ html{
         .searchbar{
           padding: .6em 6em .6em .8em;
           font-size: .8em;
-<<<<<<< HEAD
-          border-radius: 2px;
-=======
->>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
         }
       }
       @media(max-width:400px) {
@@ -501,7 +502,6 @@ html{
         .indicators{
           display: none;
         }
-<<<<<<< HEAD
       }
       main{
         margin: 10em 0;
@@ -536,16 +536,9 @@ html{
           margin: 0 2% 8%;
         }
       }
-      @media(max-width:395px) { /* xs-phone-card */
-        /* .card{
-          width: 100%;
-          margin: 0 0 3em 0;
-          padding: 0 .5em;
-        } */
-      }
       .card-img{
         width: 100%;
-        border-radius: 4px;
+        border-radius: 3px;
       }
       .card-caption{
         display: inline-block;
@@ -591,19 +584,9 @@ html{
           font-size: .5em;
         }
       }
-      @media(max-width:395px) {
-        /* .card-caption{
-          font-size: .7em;
-          padding-top: .7em;
-        }
+      @media(max-width:372px) {
         .card-number{
-          font-size: .5em;
-        } */
+          display: none;
+        }
       }
-<<<<<<< HEAD
-=======
 
-=======
-      }
->>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
->>>>>>> 6da63d0c02b04a2fda2d43ed9331ff921d699f1e
