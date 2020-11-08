@@ -77,7 +77,11 @@ html{
         display: block;
         background-color: #2A2A2A;
         padding: .75em 3em;
-        position: relative;
+    }
+    @media(max-width:520px) {
+      .navigation{
+        padding: .75em 2em;
+      }
     }
     .navigation-bar{
         display: table;
@@ -86,6 +90,7 @@ html{
     .nav-item{
         display: inline-block;
     }
+
     .nav-link{
         display: block;
         color: #cccccc;
@@ -289,6 +294,9 @@ html{
         border-radius: 3px;
         cursor: pointer;
       }
+      .searchbar:focus{
+        outline: none;
+      }
       @media(max-width:1000px) {
         .searchbar{
           padding: .7em 8em .7em .8em;
@@ -298,15 +306,11 @@ html{
         .searchbar{
           padding: .6em 6em .6em .8em;
           font-size: .8em;
-<<<<<<< HEAD
-          border-radius: 2px;
-=======
->>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
         }
       }
       @media(max-width:400px) {
         .searchbar{
-          padding: .6em 5em .6em .8em;
+          padding: .7em 6em .7em .8em;
           font-size: .7em;
         }
       }
@@ -334,7 +338,6 @@ html{
     .detail{
       margin: 0;
       padding: .8em;
-      /* background-color: #202020; */
     }
     .booknumber{
       display: inline-block;
@@ -360,33 +363,36 @@ html{
     .title{
       font-family: 'raleway';
       display: block;
-      color: #cccccc;
-      /* color: #807d7d; */
-      font-size: .8em;
+      /* color: #cccccc; */
+      color: #D99023;
+      font-size: .7em;
       float: left;
       transition: all .2s linear;
     }
     @media(max-width:1000px) {
       .title{
-        font-size: .7em;
+        font-size: .6em;
       }
     }
     @media(max-width:500px) {
       .title{
-        font-size: .6em;
+        font-size: .55em;
       }
     }
     .title:hover{
-      color: #D99023;
+      color: #807d7d;;
     }
     .text {
       font-family: 'navsans';
-      color: #cccccc;
+      color: #D99023;
       transition: all .5s linear;
       display: inline-block;
       margin-top: .2em;
       font-size: 1em;
       letter-spacing: -1px;
+    }
+    .text:hover{
+      color: #807d7d;;
     }
     @media(max-width:1000px) {
       .text{
@@ -439,9 +445,24 @@ html{
       user-select: none;
       top: 35%;
     }
-    @media(max-width:500px) {
+    @media(max-width:700px) {
       .prev, .next{
         top: 30%;
+      }
+    }
+    @media(max-width:550px) {
+      .prev, .next{
+        top: 25%;
+      }
+    }
+    @media(max-width:450px) {
+      .prev, .next{
+        top: 20%;
+      }
+    }
+    @media(max-width:350px) {
+      .prev, .next{
+        top: 17%;
       }
     }
     .next {left: 0%;}
@@ -480,12 +501,18 @@ html{
           margin: 0 .2em;
         }
       }
+      @media(max-width:550px) {
+        .dot{
+          margin: 0 .1em;
+        }
+      }
+
       .active{
         background: transparent; 
-        border: 1px solid #ffffff;
+        border: 1.9px solid #ffffff;
       }
       .dot:hover {
-        background-color: #ffffff;
+        background-color: #D99023;
       }
       /* indicators */
       .indicators{
@@ -499,30 +526,83 @@ html{
       }
       @media(max-width:768px) {
         .indicators{
-          display: none;
+          top: 65%;
         }
-<<<<<<< HEAD
+      }
+      @media(max-width:700px) {
+        .indicators{
+          top: 62%;
+        }
+      }
+      @media(max-width:620px) {
+        .indicators{
+          top: 60%;
+        }
+      }
+      @media(max-width:550px) {
+        .indicators{
+          top: 57%;
+        }
+      }
+      @media(max-width:490px) {
+        .indicators{
+          top: 57%;
+        }
+      }
+      @media(max-width:456px) {
+        .indicators{
+          top: 52%;
+        }
+      }
+      @media(max-width:435px) {
+        .indicators{
+          top: 50%;
+        }
+      }
+      @media(max-width:392px) {
+        .indicators{
+          top: 48%;
+        }
+      }
+      @media(max-width:360px) {
+        .indicators{
+          top: 44%;
+        }
+      }
+      @media(max-width:340px) {
+        .indicators{
+          top: 40%;
+        }
       }
       main{
-        margin: 10em 0;
+        margin: 4em 0;
       }
       @media(max-width:768px) {
         main{
-          margin: 5em 0;
+          /* margin: 5em 0; */
         }
       }
       /* first row cards */
       .card-title{
         color: #cccccc;
         font-family: 'navsans';
-        font-size: .9em;
+        font-size: .7em;
         font-weight: normal;
-        margin-bottom: .7em;
+        margin-bottom: 1em;
         margin-right: 1em;
+      }
+      .card-figure{
+        background-color: #151515;
+        border-radius: 0 0 3px 3px;
       }
       @media(max-width:1050px) {
         .card-title{
-          font-size: .7em;
+          font-size: .6em;
+        }
+      }
+      @media(max-width:500px) {
+        .card-title{
+          font-size: .5em;
         }
       }
       .card{
@@ -536,30 +616,24 @@ html{
           margin: 0 2% 8%;
         }
       }
-      @media(max-width:395px) { /* xs-phone-card */
-        /* .card{
-          width: 100%;
-          margin: 0 0 3em 0;
-          padding: 0 .5em;
-        } */
-      }
       .card-img{
         width: 100%;
-        border-radius: 4px;
+        border-radius: 3px;
       }
       .card-caption{
         display: inline-block;
         color: #cccccc;
         font-family: 'navsans';
         font-size: .6em;
-        padding: 1em 1em 0 0;
+        margin: 1.7em;
+        margin-left: 0;
       }
       .card-number{
         display: inline-block;
         color: #807d7d;
         font-family: 'navsans';
-        font-size: .55em;
-        padding: 0em 1em 0 0;
+        font-size: .5em;
+        padding: 0;
       }
       @media(max-width:1200px) {
         .card-caption{
@@ -591,19 +665,18 @@ html{
           font-size: .5em;
         }
       }
-      @media(max-width:395px) {
-        /* .card-caption{
-          font-size: .7em;
-          padding-top: .7em;
-        }
+      @media(max-width:372px) {
         .card-number{
-          font-size: .5em;
-        } */
+          font-size: .3em;
+        }
       }
-<<<<<<< HEAD
-=======
-
-=======
+      @media(max-width:58px) {
+        .card-number{
+          display: none;
+        }
       }
->>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
->>>>>>> 6da63d0c02b04a2fda2d43ed9331ff921d699f1e
+    /* Second row cards */
+      /* .tricard-container{
+        background-color: #151515;
+        padding: 2em;
+      } */
