@@ -298,7 +298,10 @@ html{
         .searchbar{
           padding: .6em 6em .6em .8em;
           font-size: .8em;
+<<<<<<< HEAD
           border-radius: 2px;
+=======
+>>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
         }
       }
       @media(max-width:400px) {
@@ -347,6 +350,11 @@ html{
     @media(max-width:550px) {
       .booknumber{
         font-size: .5em;
+      }
+    }
+    @media(max-width:768px) {
+      .booknumber{
+        font-size: .7em;
       }
     }
     .title{
@@ -493,6 +501,7 @@ html{
         .indicators{
           display: none;
         }
+<<<<<<< HEAD
       }
       main{
         margin: 10em 0;
@@ -528,11 +537,11 @@ html{
         }
       }
       @media(max-width:395px) { /* xs-phone-card */
-        .card{
+        /* .card{
           width: 100%;
           margin: 0 0 3em 0;
           padding: 0 .5em;
-        }
+        } */
       }
       .card-img{
         width: 100%;
@@ -583,12 +592,11 @@ html{
         }
       }
       @media(max-width:395px) {
-        .card-caption{
+        /* .card-caption{
           font-size: .7em;
           padding-top: .7em;
         }
         .card-number{
           font-size: .5em;
-        }
+        } */
       }
-
