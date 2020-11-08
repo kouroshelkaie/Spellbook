@@ -298,7 +298,10 @@ html{
         .searchbar{
           padding: .6em 6em .6em .8em;
           font-size: .8em;
+<<<<<<< HEAD
           border-radius: 2px;
+=======
+>>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
         }
       }
       @media(max-width:400px) {
@@ -347,6 +350,11 @@ html{
     @media(max-width:550px) {
       .booknumber{
         font-size: .5em;
+      }
+    }
+    @media(max-width:768px) {
+      .booknumber{
+        font-size: .7em;
       }
     }
     .title{
@@ -493,6 +501,7 @@ html{
         .indicators{
           display: none;
         }
+<<<<<<< HEAD
       }
       main{
         margin: 10em 0;
@@ -592,3 +601,6 @@ html{
         }
       }
 
+=======
+      }
+>>>>>>> 465c6622f62e8856e00b34ef6d22f995467e2cff
