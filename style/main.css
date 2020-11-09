@@ -83,6 +83,11 @@ html{
         padding: .75em 2em;
       }
     }
+    @media(max-width:520px) {
+      .navigation{
+        padding: .75em 2em;
+      }
+    }
     .navigation-bar{
         display: table;
         float: right;
@@ -347,17 +352,15 @@ html{
     }
     @media(max-width:768px) {
       .booknumber{
-        font-size: .7em;
+        /* font-size: .7em; */
+        float: right; 
+        padding-right: 1em;
+        padding-top: .5em;
       }
     }
     @media(max-width:550px) {
       .booknumber{
         font-size: .5em;
-      }
-    }
-    @media(max-width:768px) {
-      .booknumber{
-        font-size: .7em;
       }
     }
     .title{
@@ -377,11 +380,17 @@ html{
     @media(max-width:500px) {
       .title{
         font-size: .55em;
+        color: #807d7d;
+      }
+      .title:hover{
+        color: #D99023;
       }
     }
-    .title:hover{
-      color: #807d7d;;
-    }
+@media(min-width:500px) {
+  .title:hover{
+    color: #807d7d;
+  }
+}
     .text {
       font-family: 'navsans';
       color: #D99023;
@@ -393,6 +402,11 @@ html{
     }
     .text:hover{
       color: #807d7d;;
+    }
+    @media(max-width:768px) {
+      .text{
+        float: right;
+      }
     }
     @media(max-width:1000px) {
       .text{
@@ -501,12 +515,18 @@ html{
           margin: 0 .2em;
         }
       }
-      @media(max-width:550px) {
+      @media(max-width:700px) {
         .dot{
+          width: .4em; height: .4em;
           margin: 0 .1em;
         }
       }
-
+      @media(max-width:500px) {
+        .dot{
+          width: .3em; height: .3em;
+          margin: 0 .1em;
+        }
+      }
       .active{
         background: transparent; 
         border: 1.9px solid #ffffff;
@@ -577,11 +597,6 @@ html{
       main{
         margin: 4em 0;
       }
-      @media(max-width:768px) {
-        main{
-          /* margin: 5em 0; */
-        }
-      }
       /* first row cards */
       .card-title{
         color: #cccccc;
@@ -592,8 +607,9 @@ html{
         margin-right: 1em;
       }
       .card-figure{
-        background-color: #151515;
+        /* background-color: #141414; */
         border-radius: 0 0 3px 3px;
+        padding-bottom: 0em;
       }
       @media(max-width:1050px) {
         .card-title{
@@ -621,19 +637,20 @@ html{
         border-radius: 3px;
       }
       .card-caption{
-        display: inline-block;
         color: #cccccc;
         font-family: 'navsans';
-        font-size: .6em;
-        margin: 1.7em;
-        margin-left: 0;
+        font-size: .7em;
+        margin-top: .8em;
+        margin-right: 1em;
       }
       .card-number{
-        display: inline-block;
         color: #807d7d;
         font-family: 'navsans';
         font-size: .5em;
-        padding: 0;
+        display: block;
+        margin-top: .5em;
+        margin-bottom: 1.3em;
+        margin-right: 1.5em;
       }
       @media(max-width:1200px) {
         .card-caption{
@@ -670,13 +687,27 @@ html{
           font-size: .3em;
         }
       }
-      @media(max-width:58px) {
-        .card-number{
-          display: none;
+      @media(max-width:300px) {
+        .card-caption{
+          font-size: .4em;
         }
       }
     /* Second row cards */
-      /* .tricard-container{
-        background-color: #151515;
-        padding: 2em;
-      } */
+      .tricard-container{
+        background-color: #141414;
+        margin-top: 2em;
+      }
+      @media(max-width:768px) {
+        .tricard-container{
+          margin-top: 0em;
+        }
+      }
+      .tricard{
+        float: right;
+        width: 31%;
+        margin: 2em 1% 1em;
+      }
+      .tricard-img{
+        width: 100%;
+        border-radius: 3px;
+      }
