@@ -83,6 +83,11 @@ html{
         padding: .75em 2em;
       }
     }
+    @media(max-width:520px) {
+      .navigation{
+        padding: .75em 2em;
+      }
+    }
     .navigation-bar{
         display: table;
         float: right;
@@ -667,6 +672,7 @@ html{
       }
       @media(max-width:372px) {
         .card-number{
+<<<<<<< HEAD
           font-size: .3em;
         }
       }
@@ -680,3 +686,9 @@ html{
         background-color: #151515;
         padding: 2em;
       } */
+=======
+          display: none;
+        }
+      }
+
+>>>>>>> b3343af373a49e7381bd807a728fc9d1cad96cdb
