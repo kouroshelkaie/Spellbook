@@ -684,6 +684,10 @@ html{
       }
       @media(max-width:372px) {
         .card-number{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6fcf7e3c40e91edead26a90a9c45d827b33449ef
           font-size: .3em;
         }
       }
@@ -693,6 +697,7 @@ html{
         }
       }
     /* Second row cards */
+<<<<<<< HEAD
       .tricard-container{
         background-color: #141414;
         margin-top: 2em;
@@ -711,3 +716,15 @@ html{
         width: 100%;
         border-radius: 3px;
       }
+=======
+      /* .tricard-container{
+        background-color: #151515;
+        padding: 2em;
+      } */
+=======
+          display: none;
+        }
+      }
+
+>>>>>>> b3343af373a49e7381bd807a728fc9d1cad96cdb
+>>>>>>> 6fcf7e3c40e91edead26a90a9c45d827b33449ef
