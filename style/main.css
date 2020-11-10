@@ -710,9 +710,15 @@ html{
         width: 31%;
         margin: 2em 1% 1em;
       }
-      @media(max-width:768px) {
+      /* @media(max-width:768px) {
         .tricard{
           width: 32%;
+          margin: 1em .5% 1em;
+        }
+      } */
+      @media(max-width:600px) {
+        .tricard{
+          width: 100%;
           margin: 1em .5% 1em;
         }
       }
