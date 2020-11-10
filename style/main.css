@@ -629,7 +629,7 @@ html{
       @media(max-width:768px) { /* phone-card */
         .card{
           width: 46%;
-          margin: 0 2% 8%;
+          margin: 0 2% 6%;
         }
       }
       .card-img{
@@ -684,10 +684,6 @@ html{
       }
       @media(max-width:372px) {
         .card-number{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6fcf7e3c40e91edead26a90a9c45d827b33449ef
           font-size: .3em;
         }
       }
@@ -697,7 +693,6 @@ html{
         }
       }
     /* Second row cards */
-<<<<<<< HEAD
       .tricard-container{
         background-color: #141414;
         margin-top: 2em;
@@ -706,25 +701,22 @@ html{
         .tricard-container{
           margin-top: 0em;
         }
+        .tricard{
+          margin: 0 1%;
+        }
       }
       .tricard{
         float: right;
         width: 31%;
         margin: 2em 1% 1em;
       }
-      .tricard-img{
-        width: 100%;
-        border-radius: 3px;
-      }
-=======
-      /* .tricard-container{
-        background-color: #151515;
-        padding: 2em;
-      } */
-=======
-          display: none;
+      @media(max-width:768px) {
+        .tricard{
+          width: 32%;
+          margin: 1em .5% 1em;
         }
       }
-
->>>>>>> b3343af373a49e7381bd807a728fc9d1cad96cdb
->>>>>>> 6fcf7e3c40e91edead26a90a9c45d827b33449ef
+      .tricard-img{
+        width: 100%;
+        border-radius: 2px;
+      }
