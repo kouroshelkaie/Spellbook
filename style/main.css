@@ -634,7 +634,7 @@ html{
       }
       .card-img{
         width: 100%;
-        border-radius: 3px;
+        border-radius: 2px;
       }
       .card-caption{
         color: #cccccc;
@@ -716,10 +716,11 @@ html{
           margin: 1em .5% 1em;
         }
       } */
-      @media(max-width:600px) {
+      @media(max-width:768px) {
         .tricard{
           width: 100%;
-          margin: 1em .5% 1em;
+          margin: .5em .5%;
+          padding: 0 .7em;
         }
       }
       .tricard-img{
