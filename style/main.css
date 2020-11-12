@@ -22,18 +22,18 @@ html{
     clear: both;
   }
   .inner-container{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     max-width: 2000px;
   }
     @media(max-width:768px) {
       .inner-container{
-        width: 85%;
+        width: 95%;
       }
     }
     @media(max-width:550px) {
       .inner-container{
-        width: 90%;
+        width: 97%;
       }
     }
   a{
@@ -622,14 +622,14 @@ html{
         }
       }
       .card{
-        width: 23.3%;
+        width: 23.5%;
         float: right;
         margin: 0 .7%;
       }
       @media(max-width:768px) { /* phone-card */
         .card{
-          width: 46%;
-          margin: 0 2% 6%;
+          width: 47%;
+          margin: 0 1.5% 6%;
         }
       }
       .card-img{
@@ -674,17 +674,16 @@ html{
           font-size: .6em;
         }
         .card-number{
-          font-size: .4em;
-        }
-      }
-      @media(max-width:450px) {
-        .card-caption{
           font-size: .5em;
         }
       }
+
       @media(max-width:372px) {
+        .card-caption{
+          font-size: .5em;
+        }
         .card-number{
-          font-size: .3em;
+          font-size: .4em;
         }
       }
       @media(max-width:300px) {
@@ -707,15 +706,9 @@ html{
       }
       .tricard{
         float: right;
-        width: 31%;
+        width: 31.2%;
         margin: 2em 1% 1em;
       }
-      /* @media(max-width:768px) {
-        .tricard{
-          width: 32%;
-          margin: 1em .5% 1em;
-        }
-      } */
       @media(max-width:768px) {
         .tricard{
           width: 100%;
@@ -727,3 +720,164 @@ html{
         width: 100%;
         border-radius: 2px;
       }
+      /* Thrall section */
+      .thrall-container{
+        position: relative;
+        background-size: 100%;
+        background-image: url("../img/lsfi/thrallBannerBg.png");
+      }
+      .thrall-img{
+        position: absolute; 
+        width: 40%;
+        left:2%; bottom: 0%;
+      }
+      .thrall-bg{
+        width: 100%;
+        border-radius: 3px;
+      }
+      .thrall-detail{
+        padding:5.5em 7em;
+      }
+      .thrall-title{
+        color: #ffffff;
+        font-family: 'raleway';
+        font-size: 3em;
+        font-weight: normal;
+      }
+      .thrall-tagline{
+        color: #818080;
+        font-size: 1.3em;
+        padding: 1em 0;
+        font-weight: normal;
+        font-family: 'raleway';
+      }
+      .thrall-tagline span{
+        color: #cccccc;
+      }
+      .thrall-button{
+        background-color: #0D3242;
+        color: #ffffff;
+        font-family: 'raleway';
+        border-radius: 3px;
+        padding: 1.5em 3.5em;
+        margin-top: 4em;
+        cursor: pointer;
+        font-family: 'raleway';
+        font-size: .7em;
+        letter-spacing: 1px;
+        transition: all .2s linear;
+      }
+      .thrall-button:hover{
+        background-color: #051623;
+      }
+      .thrall-header{
+        margin-top: 5em;
+        color: #cccccc;
+        font-family: 'navsans';
+        font-size: .7em;
+        padding: 1em 1.5em;
+      }
+      .thrall-header span{
+        color: #807d7d;
+        font-family: 'navsans';
+        font-size: .7em;
+      }
+      @media(max-width:1500px) {
+        .thrall-title{
+          font-size:2.5em;
+        }
+        .thrall-tagline{
+          font-size: 1.2em;
+        }
+        .thrall-detail{
+          padding:4.5em 6em;
+        }
+      }
+  
+      @media(max-width:1400px) {
+        .thrall-title{
+          font-size:2.3em;
+        }
+        .thrall-tagline{
+          font-size: 1.2em;
+        }
+        .thrall-detail{
+          padding: 4em 5em;
+        }
+      }
+  
+      @media(max-width:1300px) {
+        .thrall-img{
+          width: 45%;
+        }
+      }
+
+      @media(max-width:1200px) {
+        .thrall-title{
+          font-size:2em;
+        }
+        .thrall-tagline{
+          font-size: 1em;
+        }
+        .thrall-detail{
+          padding: 3.5em 4em;
+        }
+      }
+  
+      @media(max-width:900px) {
+        .thrall-title{
+          font-size:1.5em;
+        }
+        .thrall-tagline{
+          font-size: .9em;
+        }
+        .thrall-detail{
+          padding: 2em 3em;
+        }
+        .thrall-button{
+          margin-top:2em;
+        }
+      }
+      @media(max-width:500px) {
+        .thrall-title{
+          font-size:1.2em;
+        }
+        .thrall-tagline{
+          font-size: .7em;
+        }
+        .thrall-detail{
+          padding: 2em ;
+        }
+        .thrall-button{
+          padding: 1em 2.5em;
+        }
+        .thrall-img{
+          width: 50%;
+        }
+        .thrall-header{
+          margin-top: 2em;
+          padding: .5em 1.5em;
+        }
+      }
+
+
+      @media(max-width:400px) {
+        .thrall-title{
+          font-size:1.2em;
+        }
+        .thrall-tagline{
+          font-size: .7em;
+        }
+        .thrall-detail{
+          padding: 2em .7em;
+        }
+        .thrall-button{
+          padding: 1.5em 2.5em;
+          font-size: .5em;
+        }
+        .thrall-img{
+          width: 62%;
+        }
+      }
+  
+
