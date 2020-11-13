@@ -722,6 +722,7 @@ html{
       }
       /* Thrall section */
       .thrall-container{
+        border-radius: 3px;
         position: relative;
         background-size: 100%;
         background-image: url("../img/lsfi/thrallBannerBg.png");
@@ -774,7 +775,7 @@ html{
         margin-top: 5em;
         color: #cccccc;
         font-family: 'navsans';
-        font-size: .7em;
+        font-size: .8em;
         padding: 1em 1.5em;
       }
       .thrall-header span{
@@ -878,6 +879,53 @@ html{
         .thrall-img{
           width: 62%;
         }
+      }
+      /* day/night of dragon */
+      .dragon-container{
+        background-color: #141414;
+        padding: 2em 0em 2em;
+        margin-top: 3em;
+      }
+      .dragon-img{
+        width: 100%;
+        border-radius: 3px;
+      }
+      .day , .night{
+        float: right;
+        width: 48%;
+        margin: 0 1%;
+      }
+      .dragon-title{
+        color: #cccccc;
+        font-family: 'navsans';
+        font-size: .8em;
+        display: block;
+        padding: 1em 1.5em;
+      }
+      .dragon-cap{
+        color: #cccccc;
+        font-family: 'navsans';
+        font-size: .7em;
+        padding-top: .8em;
+        padding-right: 1em;
+      }
+      .dragon-number{
+        color: #807d7d;
+        font-family: 'navsans';
+        font-size: .7em;
+        padding: .5em;
+      }
+      @media(max-width:600px) {
+        .day , .night{
+          width: 100%;
+          margin: 0;
+        }
+        .night{
+          margin-top: 1em;
+        }
+      }
+      .bg-none{
+        background: none;
       }
   
 
