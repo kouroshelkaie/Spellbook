@@ -138,28 +138,58 @@ html{
         opacity: .8;
         margin-top: 1px;
     }
-            /* subnavigation */
-    /* .sub-navigation{
-      list-style-type: none;
-      position: absolute;
-      top: 100%;
-      padding: 1em .5em;
-      border-radius: 0 0 2px 2px;
-      display: none;
+    /* subnavigation */
+    #forhover{
+      position: relative;
     }
     #forhover:hover .sub-navigation{
-      display: block;
+      opacity: 1;
       pointer-events: visible;
+    }
+    .sub-navigation{
+      position: absolute;
+      list-style-type: none;
+      opacity: 0;
+      pointer-events: none;
+      padding: 1em;
+      transition: all .3s ease-in-out;
+      white-space: nowrap;
+      border-radius: 2px;
+    }
+    @media(max-width:500px) {
+      .sub-navigation{
+        background-color: #2A2A2A
+      }
+      .subnav-link{
+        font-size: .8em;
+      }
+    }
+    @media(max-width:400px) {
+      .subnav-link{
+        font-size: .6em;
+      }
     }
     .subnav-link{
       color: #cccccc;
       font-family: 'iransans-reg';
+      font-size: .9em;
       transition: all .2s linear;
-      font-family: .8em;
+      padding: .1em 0;
+      display: block;
+    }
+    @media(max-width:768px) {
+      .subnav-link{
+        white-space: nowrap;
+      }
+    }
+    @media(max-width:450px) {
+      .subnav-link{
+        white-space: nowrap;
+      }
     }
     .subnav-link:hover{
       color: #D99023;
-    } */
+    }
     /* sidebar-button */
     .sidebar-button{
         float: left;
@@ -269,6 +299,11 @@ html{
         display: block;
         margin: 2em 0; 
       }
+      @media(max-width:600px) {
+        .bar{
+          padding: 0 .7em;
+        }
+      }
       .choice{
         float: right;
       }
@@ -296,7 +331,7 @@ html{
         background-color: #202020;
         color: #cccccc;
         padding: .9em 10em .9em .8em;
-        border-radius: 3px;
+        border-radius: 2px;
         cursor: pointer;
       }
       .searchbar:focus{
@@ -332,12 +367,16 @@ html{
       margin-top: 2em;
     }
     .img-slider{
-      border-radius: 4px;
+      border-radius: 3px;
       width: 100%;
+      transition: all .2s linear;
+    }
+    .img-slider:hover{
+      filter: brightness(120%);
     }
     @media(max-width:768px) {
       .img-slider{
-        border-radius: 2px;
+        border-radius: 1px;
       }
     }
     .detail{
@@ -451,9 +490,8 @@ html{
       cursor: pointer;
       position: absolute;
       top: 50%; 
-      border-radius: 0 4px 4px 0;
       padding:15px 15px;
-      font-size: 1em;
+      font-size: 1.2em;
       color: #cccccc;
       transition: 0.4s ease;
       user-select: none;
@@ -546,52 +584,52 @@ html{
       }
       @media(max-width:768px) {
         .indicators{
-          top: 65%;
+          top: 73%;
         }
       }
       @media(max-width:700px) {
         .indicators{
-          top: 62%;
+          top: 70%;
         }
       }
       @media(max-width:620px) {
         .indicators{
-          top: 60%;
+          top: 67%;
         }
       }
       @media(max-width:550px) {
         .indicators{
-          top: 57%;
+          top: 65%;
         }
       }
       @media(max-width:490px) {
         .indicators{
-          top: 57%;
+          top: 63%;
         }
       }
       @media(max-width:456px) {
         .indicators{
-          top: 52%;
+          top: 59%;
         }
       }
       @media(max-width:435px) {
         .indicators{
-          top: 50%;
+          top: 55%;
         }
       }
       @media(max-width:392px) {
         .indicators{
-          top: 48%;
+          top: 52%;
         }
       }
       @media(max-width:360px) {
         .indicators{
-          top: 44%;
+          top: 50%;
         }
       }
       @media(max-width:340px) {
         .indicators{
-          top: 40%;
+          top: 46%;
         }
       }
       main{
@@ -634,12 +672,17 @@ html{
       }
       .card-img{
         width: 100%;
-        border-radius: 2px;
+        border-radius: 1px;
+        transition: all .2s linear;
+      }
+      .card-img:hover{
+        box-shadow: 0px 0px 30px #000000;
+        filter: brightness(120%);
       }
       .card-caption{
         color: #cccccc;
         font-family: 'navsans';
-        font-size: .7em;
+        font-size: .8em;
         margin-top: .8em;
         margin-right: 1em;
       }
@@ -654,7 +697,7 @@ html{
       }
       @media(max-width:1200px) {
         .card-caption{
-          font-size: .55em;
+          font-size: .65em;
         }
         .card-number{
           font-size: .5em;
@@ -680,15 +723,15 @@ html{
 
       @media(max-width:372px) {
         .card-caption{
-          font-size: .5em;
+          font-size: .6em;
         }
         .card-number{
-          font-size: .4em;
+          font-size: .5em;
         }
       }
       @media(max-width:300px) {
         .card-caption{
-          font-size: .4em;
+          font-size: .46em;
         }
       }
     /* Second row cards */
@@ -718,11 +761,16 @@ html{
       }
       .tricard-img{
         width: 100%;
-        border-radius: 2px;
+        border-radius: 1px;
+        transition: all .2s linear;
+      }
+      .tricard-img:hover{
+        box-shadow: 0px 0px 50px #000000;
+        filter: brightness(120%);
       }
       /* Thrall section */
       .thrall-container{
-        border-radius: 3px;
+        border-radius: 2px;
         position: relative;
         background-size: 100%;
         background-image: url("../img/lsfi/thrallBannerBg.png");
@@ -734,7 +782,7 @@ html{
       }
       .thrall-bg{
         width: 100%;
-        border-radius: 3px;
+        border-radius: 2px;
       }
       .thrall-detail{
         padding:5.5em 7em;
@@ -759,7 +807,7 @@ html{
         background-color: #0D3242;
         color: #ffffff;
         font-family: 'raleway';
-        border-radius: 3px;
+        border-radius: 2px;
         padding: 1.5em 3.5em;
         margin-top: 4em;
         cursor: pointer;
@@ -888,7 +936,12 @@ html{
       }
       .dragon-img{
         width: 100%;
-        border-radius: 3px;
+        border-radius: 2px;
+        transition: all .2s linear;
+      }
+      .dragon-img:hover{
+        box-shadow: 0px 0px 30px #000000;
+        filter: brightness(120%);
       }
       .day , .night{
         float: right;
@@ -905,7 +958,7 @@ html{
       .dragon-cap{
         color: #cccccc;
         font-family: 'navsans';
-        font-size: .7em;
+        font-size: .75em;
         padding-top: .8em;
         padding-right: 1em;
       }
@@ -932,7 +985,7 @@ html{
         margin-top: 8em;
         position: relative;
         background-size: 100%;
-        border-radius: 3px;
+        border-radius: 2px;
         background-image: url('../img/lsfi/jainaBannerBg.png');
       }
       @media(max-width:1000px) {
@@ -1002,37 +1055,6 @@ html{
   }
   .footer-item{
     display: inline-block;
-  }
-  .home{
-    width: 1.2em;
-    position: absolute;
-    left: 110%; top: 0; bottom: 0;
-    margin: auto 0;
-    transition:all .5s linear;
-  }
-  @media(max-width:768px) {
-    .home{
-      left: 80%;
-      width: 1em; 
-    }
-  }
-  @media(max-width:600px) {
-    .home{
-      left: 85%;
-      width: 1em; 
-    }
-  }
-  @media(max-width:500px) {
-    .home{
-      left: 90%;
-      width: 1em; 
-    }
-  }
-  @media(max-width:400px) {
-    .home{
-      left: 95%;
-      width: 1em; 
-    }
   }
   .footer-link{
     text-decoration: none;
