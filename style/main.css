@@ -1128,4 +1128,7 @@ html{
       font-size: .8em;
     }
   }
+  @media(max-width:768px) {
+    .br{display: none;}
+  }
   
