@@ -1,5 +1,5 @@
 <!DOCTYPE html 5>
-<html lang="fa" lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -14,223 +14,190 @@
     <meta property="og:site_name" content="spellbook.ir">
     <meta property="og:title" content="spellbook">
     <meta property="og:description" content="world of warcraft story timeline in order">
-    <link rel="stylesheet" href="../style/inside pgs/insidepage.css">
+    <link rel="stylesheet" href="../style/insidepage.css">
     <script src="../script/toggle.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../script/filterSearch.js" defer></script>
-    <link rel="icon" href="../img/lsfi/13.png" type="image/gif" sizes="32x32">
+    <link rel="icon" type="image/gif" href="../img/lsfi/13.png">
     <title>طلوع هورد</title>
 </head>
 <body id="bdy">
-    <section class="outer-container">
-        <!-- header -->
-        <header class="header">
-            <h1 class="e-title" data-aos="fade-up" data-aos-duration="2000">RISE OF THE HORDE</h1>
-            <figure>
-                <img src="../img/4-Rise of the horde/cc.jpg" class="banner-img">
-            </figure>
-            <div class="inner-container">
-                <button onclick="sidebarToggle()">
-                    <img src="../img/lsfi/icons/menu1.svg" class="sidebar-button">
+    <div class="outer-container">
+       <div class="header">
+        <div class="navigation clf">
+            <a href="../index.html"><img src="../img/lsfi/13.png" class="nav-logo"></a>
+            <ul class="navigation-bar">
+                <li class="nav-item" id="homee"><a href="../index.html" class="nav-link" > خانه</a></li>
+                <li class="nav-item"><a href="http://kalimdor.ir/" class="nav-link" target="_blank">کالیمدور</a></li>
+                <li class="nav-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="nav-link" target="_blank">کمیک ها</a></li>
+                <li class="nav-item" id="forhover"><a class="nav-link"> کرونیکل  <i class="fa fa-chevron-down arrow"></i></a>
+                    <ul class="sub-navigation">
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link">کرونیکل : جلد دوم</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item"><a href="" class="nav-link shadowlands">شدولندز</a></li>
+            </ul>
+            <img src="../img/lsfi/icons/menu1.svg" alt="" class="sidebar-button" onclick="sidebarToggle()">
+        </div>
+       </div> 
+        <!-- bar -->
+        <div class="inner-container clf">
+            <div class="bar">
+                <div class="choice">
+                    <a href="#" class="book">کتاب ها</a>
+                    <a href="http://kalimdor.ir/category/articles/" class="article">مقالات</a>
+                </div>
+                <button class="searchbar" onclick="sidebarToggle()"> 
+                    Search &nbsp;&nbsp;&nbsp;<i class="fa fa-search"></i>
                 </button>
-                <!-- header-navigation -->
-                <nav class="navigation" id="navi">
-                    <ul class="nav-menu" id="nvmn">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">خانه</a></li> 
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
-                        <li class="nav-item" id="hoverable">
-                            <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
-                            <ul class="subnav-menu"  id="chro" >
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
-                    </ul>
-                </nav>
             </div>
-            <!-- sidebar -->
-            <div class="sidebar-container">
-                <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
-                <ul class="sidebar-menu" id="sideUl">
-                    <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
-                </ul>
+        </div>
+        <div class="sidebar-container">
+            <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+            <ul class="sidebar-menu" id="sideUl">
+                <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <figure class="header-figure clf">
+                <img src="../img/4-Rise of the horde/cc.jpg" alt="" class="header-img">
+                <figcaption class="header-caption">طلوع هورد &nbsp;<span> کتاب چهارم </span></figcaption>
+                <figcaption class="header-ecaption"> Rise of the horde</figcaption>
+            </figure>
+        </div>
+        <!-- main-content -->
+            <p class="abstract inner-container">
+                داستان وارکرفت به نظر من مانند اکثر فانتزی های مدرن دوره ما، ریشه در پدر فانتزی های مدرن، کتاب های تالکین و ارباب حلقه ها دارد. تالکین افسانه های قدیمی کشورهای مختلف را جمع آوری کرد، گاهی شاخ و برگ بهشان داد و گاهی هرسشان کرد. به موجوداتی مانند اورک، الف، گابلین و... قالبی جدید و جامع داد. اگر به داستان های ملل دیگر نگاهی بیاندازید ( بهترین نمونه ها را در اساطیر کشورهای اروپایی می توانید پیدا کنید، مخصوصاً داستان های هانس کریستین اندرسن ) هر داستانی برای خودش شکل و اخلاق خاصی برای این موجودات دارد. یکی اورک را موجودی دله دزد معرفی می کند، دیگری ترسو و گوشه گیر. در یکی الف موجودی است که در غنچه گل می خوابد و از شهد آن تغذیه می کند و در دیگر موجودی شرور و حیله گر است. مقدمه کتاب یاران حلقه ترجمه آقای رضا علیزاده از انتشارات روزنه به گوشه ای از این افسانه ها اشاره می کند. نبرد بین خیر و شر این فانتزی ها، از مباحث بسیار قدیمی است. سارگراس و لژیون آتشینش، مانند شیطان و ارتش جهنم هستند که در روایات مسیحیان در پایان دنیا با ارتش بهشت در نبرد آخر زمان خواهند جنگید. سارگراس مانند شیطان، موجود خوبی بوده است که گرفتار خودبینی اش شده و حالا می خواهد هر چه را که تایتان های خوب و پاک آفریده اند و نظم داده اند به نابودی و آشوب بکشاند و موجودات دیگر را فریب می دهد و همراه خودش می کند. این سناریو در تاریخ تمام نژادها تکرار می شود، آن ها را دو دسته می کند و به جان هم می اندازد. اورک ها را کیل جیدن فریب می دهد و الف های شبانگاه را خود سارگراس و... شخصیت های فانتزی، جادو ها و... را بدون شک بازی ها پروراندند و شکل دادند. به استثنای وارکرفت و تک و توکی دیگر، بیشتر بازی های نقش آفرینی اولین بازی هایی بودند ( و هستند ) که جزییات این شخصیت ها را آشکار می کردند. وارکرفت برای اولین بار، اورک های سبز پوستی را نشان داد که ناگهان به دنیای انسان ها وارد می شوند و شروع به کشتار آن ها می کنند و حضور این نوع اورک در وارکرفت باعث شهرت آن شد به طوری که اورک نماد این بازی قرار گرفت. ... 
+            </p>
+            <div class="inner-container">
+                <h4 class="e-version ttl">درباره کتاب</h4>
             </div>
-        </header>
-        <!-- ==================================================== -->
-        <!-- main-section -->
-        <main class="main">
-            <div class="inner-container2">
-                <section class="main-first-row clf">
-                    <div class="main-text">
-                        <div class="main-paragraphs">
-                            <h4 class="titles">کتاب چهارم </h4>
-                            <p class="main-contents"> داستان وارکرفت به نظر من مانند اکثر فانتزی های مدرن دوره ما، ریشه در پدر فانتزی های مدرن، کتاب های تالکین و ارباب حلقه ها دارد. تالکین افسانه های قدیمی کشورهای مختلف را جمع آوری کرد، گاهی شاخ و برگ بهشان داد و گاهی هرسشان کرد. به موجوداتی مانند اورک، الف، گابلین و... قالبی جدید و جامع داد. اگر به داستان های ملل دیگر نگاهی بیاندازید ( بهترین نمونه ها را در اساطیر کشورهای اروپایی می توانید پیدا کنید، مخصوصاً داستان های هانس کریستین اندرسن ) هر داستانی برای خودش شکل و اخلاق خاصی برای این موجودات دارد. یکی اورک را موجودی دله دزد معرفی می کند، دیگری ترسو و گوشه گیر. در یکی الف موجودی است که در غنچه گل می خوابد و از شهد آن تغذیه می کند و در دیگر موجودی شرور و حیله گر است. مقدمه کتاب یاران حلقه ترجمه آقای رضا علیزاده از انتشارات روزنه به گوشه ای از این افسانه ها اشاره می کند. 
-                                نبرد بین خیر و شر این فانتزی ها، از مباحث بسیار قدیمی است. سارگراس و لژیون آتشینش، مانند شیطان و ارتش جهنم هستند که در روایات مسیحیان در پایان دنیا با ارتش بهشت در نبرد آخر زمان خواهند جنگید. سارگراس مانند شیطان، موجود خوبی بوده است که گرفتار خودبینی اش شده و حالا می خواهد هر چه را که تایتان های خوب و پاک آفریده اند و نظم داده اند به نابودی و آشوب بکشاند و موجودات دیگر را فریب می دهد و همراه خودش می کند. این سناریو در تاریخ تمام نژادها تکرار می شود، آن ها را دو دسته می کند و به جان هم می اندازد. اورک ها را کیل جیدن فریب می دهد و الف های شبانگاه را خود سارگراس و... 
-                                شخصیت های فانتزی، جادو ها و... را بدون شک بازی ها پروراندند و شکل دادند. به استثنای وارکرفت و تک و توکی دیگر، بیشتر بازی های نقش آفرینی اولین بازی هایی بودند ( و هستند ) که جزییات این شخصیت ها را آشکار می کردند. وارکرفت برای اولین بار، اورک های سبز پوستی را نشان داد که ناگهان به دنیای انسان ها وارد می شوند و شروع به کشتار آن ها می کنند و حضور این نوع اورک در وارکرفت باعث شهرت آن شد به طوری که اورک نماد این بازی قرار گرفت. ... 
-                            </p>
-                            <h4 class="titles">درباره کتاب </h4>
-                            <p class="main-contents">
-                                در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند
-                                . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان
-                                 معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند،
-                                 داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی
-                                ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های
-                                 آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی
-                                 یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند
-                                 وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده
-                                 است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن
-                                ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
-                            </p>
-                            <h4 class="titles">
-                                درباره نویسنده
-                            </h4>
-                            <p class="main-contents">
-                                کریستی گلدن، نویسنده بیش از سی رمان و چند داستان کوتاه در زمینه‌های علمی تخیلی، فانتزی و وحشت است. او در آمریکا به دنیا آمده است.
-
-                                او نویسنده سری کتاب‌های وارکرافت است. وی هم‌اکنون با همسر و فرزندانش در کلرادو آمریکا زندگی می‌کند.
-                            </p>
-                            <h4 class="titles">
-                                دانلود نسخه انگلیسی
-                            </h4>
-                            <a href="https://www.goodreads.com/book/show/279501.Rise_of_the_Horde?ac=1&from_search=true&qid=NhSLnmL1wo&rank=1" target="_blank">
-                                https://www.goodreads.com/book/show/279501.Rise_of_the_Horde?ac=1&from_search=true&qid=NhSLnmL1wo&rank=1
-                            </a>
-                        </div>
+            
+            <div class="detailes">
+                <div class="inner-container clf">
+                    <div class="detail">
+                        <ul class="detail-menu">
+                            <li class="detail-item">عنوان</li>
+                            <li class="detail-item data">طلوع هورد</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">حجم فایل</li>
+                            <li class="detail-item data">4.7 مگابایت</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item"> صفحه</li>
+                            <li class="detail-item data">310</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">سال انتشار</li>
+                            <li class="detail-item data">2006</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">نویسنده</li>
+                            <li class="detail-item data"><span> Christie Golden</span></li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">مترجم</li>
+                            <li class="detail-item data">احسان مقصودی</li>
+                        </ul>
                     </div>
-                    <!-- detailes section -->
-                    <div class="main-detailes">
-                        <figure class="cover-container">
-                            <img src="../img/4-Rise of the horde/cover.jpg" class="cover-img" alt="DawnOfTheAspects-coverImage">
-                        </figure>
-                        <div class="detail">
-                            <div class="clf">
-                                <div class="labels">
-                                    <label for="">عنوان </label>
-                                    <label for="">حجم فایل</label>
-                                    <label for="">تعداد صفحه</label>
-                                    <label for="">سال انتشار</label>
-                                    <label for="">ناشر</label>
-                                    <label for="">نویسنده</label>
-                                    <label for="">مترجم</label>
-                                    <label for="">ژانر</label>
-                                    <label for="">امتیاز</label>
-                                </div>
-                                <div class="values">
-                                    <div>دنیای وارکرفت : طلوع هورد</div>
-                                    <div>4.7 مگابایت</div>
-                                    <div>310</div>
-                                    <div>2006</div>
-                                    <div>
-                                        <a href="https://www.simonandschuster.com/" target="_blank">
-                                            <img src="../img/lsfi/simon-schuster-logotype.jpg" class="publisher">
-                                        </a>
-                                    </div>
-                                    <div class="author">Christie Golden</div>
-                                    <div> احسان مقصودی</div>
-                                    <div>
-                                        <span>فانتزی</span> ,
-                                        <span>حماسی</span> ,
-                                        <span>ماجراجویی</span>
-                                    </div>
-                                    <!-- rating star -->
-                                    <div class="rating-container">
-                                        <a href="https://www.goodreads.com/book/show/279501.Rise_of_the_Horde?ac=1&from_search=true&qid=NhSLnmL1wo&rank=1" target="_blank">
-                                            <ul class="rating-menu">
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star1.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="../pdf src/4-Rise of the horde.rar" class="download-button">download</a>
+                    <a href="../pdf src/4-Rise of the horde.rar">
+                        <div class="download-container">
+                            <button class="download-button">DOWNLOAD</button>
                         </div>
-                    </div>
-                </section>
-                <section class="main-sec-row ">
-                    <!-- suggestion-box -->
-                    <div class="suggestion-box clf">
-                        <div class="card" >
-                            <figure class="figure">
-                                <img src="../img/19-voljin/card.jpg" alt="" class="card-img"> 
-                                <figcaption class="fig-cap"> VOLJIN <br> SHADOW OF THE HORD</figcaption> 
-                                <a href="../inside pgs/Voljin,ShadowOfHorde.html" class="card-link">وولجین : سایه هورد</a> 
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/11-Of blood and honor/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">OF BLOOD AND HONOR</figcaption>
-                                <a href="../inside pgs/OfBloodAndHonor.html" class="card-link">از خون و افتخار</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/5-The last guardian/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">THE LAST GUARDIAN</figcaption>
-                                <span></span>
-                                <a href="../inside pgs/LastGuardian.html" class="card-link">آخرین نگهبان</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/13-Thrall-twilight of the aspwects/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">THRALL <br> TWILIGHT OF THE ASPECTS</figcaption>
-                                <a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="card-link">کتاب ترال : گرگ و میش سیمایان</a>
-                            </figure>
-                        </div> 
-                </section>
+                    </a>
+                </div>
             </div>
-        </main>
-        <!-- ======================================== -->
+            <div class="inner-container">
+                <h4 class="author-title ttl">درباره نویسنده </h4>
+                <p class="abstract">
+                    کریستی گلدن، نویسنده بیش از سی رمان و چند داستان کوتاه در زمینه‌های علمی تخیلی، فانتزی و وحشت است. او در آمریکا به دنیا آمده است. او نویسنده سری کتاب‌های وارکرافت است. وی هم‌اکنون با همسر و فرزندانش در کلرادو آمریکا زندگی می‌کند. 
+                </p>
+                <h4 class="e-version ttl inner-container"> دانلود نسخه انگلیسی </h4>
+                <a href="https://www.goodreads.com/book/show/279501.Rise_of_the_Horde?ac=1&from_search=true&qid=NhSLnmL1wo&rank=1 " class=" abstract e-link">https://www.goodreads.com/book/show/279501.Rise_of_the_Horde?ac=1&from_search=true&qid=NhSLnmL1wo&rank=1 </a>
+            </div>
+            <!-- cards -->
+            <div class="card-container clf">
+            <div class="inner-container">
+                    <div class="card">
+                        <a href="../inside pgs/WellOfEternity.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/1-War of ancients-Well of eternity/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : چشمه جاودانگی</figcaption>
+                                <span class="card-number"> کتاب اول</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/DemonSoul.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/2-War of ancients-Demon soul/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : اهریمن روان</figcaption>
+                                <span class="card-number">کتاب دوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/TheSundering.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/3-War of ancients-Sundering/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : شکافت</figcaption>
+                                <span class="card-number">کتاب سوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/RiseOfTheHorde.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/4-Rise of the horde/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">طلوع هورد</figcaption>
+                                <span class="card-number">کتاب چهارم</span>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
         <!-- footer -->
-        <footer class="inner-container2 clf">
+        <footer class=" clf">
             <div class="inner-container">
                 <ul class="footer-menu">
-                    <li class="footer-item">
-                        <a href="../main.html">
-                            <img src="../img/lsfi/13.png" alt="" class="home">
-                        </a>
-                    </li>
+                    <li class="footer-item"><a href="#homee" class="footer-link" >خانه</a></li>
                     <li class="footer-item"><a href="http://kalimdor.ir/" class="footer-link" target="_blank">کالیمدور</a></li>
                     <li class="footer-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="footer-link"  target="_blank">کمیک ها</a></li>
                     <li class="footer-item">
-                        <a href="#anchor" class="footer-link">کرونیکل</a>
+                        <a href="#homee" class="footer-link">کرونیکل</a>
                     </li>
-                    <li class="footer-item"><a href="../inside pgs/shadowlands.html" class="footer-link">شدولندز</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">شدولندز</a></li>
                 </ul>
                 <a href="mailto:kourosh.elkaie@gmail.com" class="mail">kourosh.elkaie@gmail.com</a>
             </div>
         </footer>
-    </section>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+

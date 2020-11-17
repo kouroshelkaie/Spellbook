@@ -1,5 +1,5 @@
 <!DOCTYPE html 5>
-<html lang="fa" lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -14,240 +14,190 @@
     <meta property="og:site_name" content="spellbook.ir">
     <meta property="og:title" content="spellbook">
     <meta property="og:description" content="world of warcraft story timeline in order">
-    <link rel="stylesheet" href="../style/inside pgs/insidepage.css">
+    <link rel="stylesheet" href="../style/insidepage.css">
     <script src="../script/toggle.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../script/filterSearch.js" defer></script>
-    <link rel="icon" href="../img/lsfi/13.png" type="image/gif" sizes="32x32">
-    <title>دنیای وارکرفت:استورمریج</title>
+    <link rel="icon" type="image/gif" href="../img/lsfi/13.png">
+    <title> استورمریج </title>
 </head>
 <body id="bdy">
-    <section class="outer-container">
-        <!-- header -->
-        <header class="header">
-            <h1 class="e-title" data-aos="fade-up" data-aos-duration="2000">STORMRAGE</h1>
-            <figure>
-                <img src="../img/15-Stormrage/banner.jpg" class="banner-img">
-            </figure>
-            <div class="inner-container">
-                <button onclick="sidebarToggle()">
-                    <img src="../img/lsfi/icons/menu1.svg" class="sidebar-button">
+    <div class="outer-container">
+       <div class="header">
+        <div class="navigation clf">
+            <a href="../index.html"><img src="../img/lsfi/13.png" class="nav-logo"></a>
+            <ul class="navigation-bar">
+                <li class="nav-item" id="homee"><a href="../index.html" class="nav-link" > خانه</a></li>
+                <li class="nav-item"><a href="http://kalimdor.ir/" class="nav-link" target="_blank">کالیمدور</a></li>
+                <li class="nav-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="nav-link" target="_blank">کمیک ها</a></li>
+                <li class="nav-item" id="forhover"><a class="nav-link"> کرونیکل  <i class="fa fa-chevron-down arrow"></i></a>
+                    <ul class="sub-navigation">
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link">کرونیکل : جلد دوم</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item"><a href="" class="nav-link shadowlands">شدولندز</a></li>
+            </ul>
+            <img src="../img/lsfi/icons/menu1.svg" alt="" class="sidebar-button" onclick="sidebarToggle()">
+        </div>
+       </div> 
+        <!-- bar -->
+        <div class="inner-container clf">
+            <div class="bar">
+                <div class="choice">
+                    <a href="#" class="book">کتاب ها</a>
+                    <a href="http://kalimdor.ir/category/articles/" class="article">مقالات</a>
+                </div>
+                <button class="searchbar" onclick="sidebarToggle()"> 
+                    Search &nbsp;&nbsp;&nbsp;<i class="fa fa-search"></i>
                 </button>
-                <!-- header-navigation -->
-                <nav class="navigation" id="navi">
-                    <ul class="nav-menu" id="nvmn">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">خانه</a></li> 
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
-                        <li class="nav-item" id="hoverable">
-                            <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
-                            <ul class="subnav-menu"  id="chro" >
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
-                    </ul>
-                </nav>
             </div>
-            <!-- sidebar -->
-            <div class="sidebar-container">
-                <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
-                <ul class="sidebar-menu" id="sideUl">
-                    <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
-                </ul>
+        </div>
+        <div class="sidebar-container">
+            <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+            <ul class="sidebar-menu" id="sideUl">
+                <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <figure class="header-figure clf">
+                <img src="../img/15-Stormrage/banner.jpg" alt="" class="header-img">
+                <figcaption class="header-caption"> استورمریج  &nbsp;<span> کتاب پانزدهم </span></figcaption>
+                <figcaption class="header-ecaption"> Stormrage</figcaption>
+            </figure>
+        </div>
+        <!-- main-content -->
+            <p class="abstract inner-container">
+                تورا در لبه پرتگاه عظیمی ایستاده بود، و در حالی که کاري از اوساخته نبـود بـه صـحنۀ آنسـوي پرتگـاه نگاه می کرد و دستش بی اراده بر قبضۀ تبرش فشرده می شد. این اورك ماده اندامِ عضلانی و نیرومند یک جنگجويِ کارکشته را داشت، هرچند که شاید بتازگی به سن بلوغ رسیده بود. اما با وجود سـینۀ فـراخ و عضلات نیرومندش وقتی در لبۀ پرتگاه به عقب و جلو می رفت رفتارش کودکانـه و هراسـان مـی نمـود . دندان هاي نیش بزرگش از دهان بیرون زده بود و بیصدا اعتراض می کرد. موهاي قهوه اي و پر پشتش که همیشه به نرمی پشت سر جمع شده بود، دراین لحظه باز شده و در سمت چپ چهره اش فرو افتاده بودند. در آنسوي دره نبردي نابرابر در جریان بود و در مرکز آن مردي از هم نژادان قهوه اي رنگ او قرار داشـت که تورا او را از خاطرات کمرنگ کودکی و بیش از آن از روي داستان ها و خاطراتی که رهبـر بزرگشـان ترال برایش تعریف کرده بود می شناخت. او جنگجویی سالخورده اما با بازوانی توانمنـد بـود و همـان زره چرمی و نشان مربوط به قبیلۀ تورا را به تن داشت. بر تن جنگجوي کهن زخم هاي متعددي حاکی از نبرد ها و مبارزات قدیمی وجود داشت. اورك نر با وجود بودن در محاصرة دشمنانش با ضربات خود دشـمنان دیو وش خود را خوار و زمین گیر کرده بود. و اینان حقیقتاَ دیو بودند! شیاطینی از لژیون سوزان که بسیار ... 
+            </p>
+            <div class="inner-container">
+                <h4 class="e-version ttl">درباره کتاب</h4>
             </div>
-        </header>
-        <!-- ==================================================== -->
-        <!-- main-section -->
-        <main class="main">
-            <div class="inner-container2">
-                <section class="main-first-row clf">
-                    <div class="main-text">
-                        <div class="main-paragraphs">
-                            <h4 class="titles">کتاب پانزدهم </h4>
-                            <p class="main-contents">
-                                تورا در لبه پرتگاه عظیمی ایستاده بود، و در حالی که کاري از اوساخته نبـود بـه صـحنۀ آنسـوي پرتگـاه
-                                نگاه می کرد و دستش بی اراده بر قبضۀ تبرش فشرده می شد. این اورك ماده اندامِ عضلانی و نیرومند یک
-                                جنگجويِ کارکشته را داشت، هرچند که شاید بتازگی به سن بلوغ رسیده بود. اما با وجود سـینۀ فـراخ و
-                                عضلات نیرومندش وقتی در لبۀ پرتگاه به عقب و جلو می رفت رفتارش کودکانـه و هراسـان مـی نمـود .
-                                دندان هاي نیش بزرگش از دهان بیرون زده بود و بیصدا اعتراض می کرد. موهاي قهوه اي و پر پشتش که
-                                همیشه به نرمی پشت سر جمع شده بود، دراین لحظه باز شده و در سمت چپ چهره اش فرو افتاده بودند.
-                                در آنسوي دره نبردي نابرابر در جریان بود و در مرکز آن مردي از هم نژادان قهوه اي رنگ او قرار داشـت
-                                که تورا او را از خاطرات کمرنگ کودکی و بیش از آن از روي داستان ها و خاطراتی که رهبـر بزرگشـان
-                                ترال برایش تعریف کرده بود می شناخت. او جنگجویی سالخورده اما با بازوانی توانمنـد بـود و همـان زره
-                                چرمی و نشان مربوط به قبیلۀ تورا را به تن داشت. بر تن جنگجوي کهن زخم هاي متعددي حاکی از نبرد
-                                ها و مبارزات قدیمی وجود داشت. اورك نر با وجود بودن در محاصرة دشمنانش با ضربات خود دشـمنان
-                                دیو وش خود را خوار و زمین گیر کرده بود. 
-                                و اینان حقیقتاَ دیو بودند! شیاطینی از لژیون سوزان که بسیار ...
-                            </p>
-                            <h4 class="titles">درباره کتاب </h4>
-                            <p class="main-contents">
-                                در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند
-                                . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان
-                                 معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند،
-                                 داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی
-                                ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های
-                                 آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی
-                                 یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند
-                                 وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده
-                                 است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن
-                                ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
-                            </p>
-                            <h4 class="titles">
-                                درباره نویسنده
-                            </h4>
-                            <p class="main-contents">
- 
-                                ریچارد ا. ناک   نویسنده‌ی داستان‌های فانتزی و از نویسندگان منتخب نیویورک تایمز برای نگارش داستان حماسه‌ی هوما است. وی متولد ۲۸ مِه ۱۹۶۱ در شهر شیکاگو از پدری انگلیسی و مادری آمریکایی است.
-
-                                زندگی‌نامه ریچارد
-                                ناک تحصیلات اولیه‌ی خود را در به اصرار مادرش در رشته‌ی شیمی در دانشگاه چمپیون-اوربانای ایلینوز شروع نمود، ولی در میانه‌ی راه آن را علت علاقه به نویسندگی ترک گفت و به زادگاه پدرش انگلستان رفته و مدتی را در آکسفورد در رشته‌ی ریشه‌های زبان مشغول تحصیل شد.
-
-                                یک سال بعد به دلیل مشکلات پدرش به آمریکا بازگشته و در دانشگاه سابقش در رشته‌ی علم معانی مشغول به تحصیل شد و چهار سال بعد با مدرک لیسانس دانشگاه را ترک کرد و به مطالعات شخصی بر روی زبان‌های کهن مشغول شد. بعد از خواندن رمان طوفان برفراز سحرسالار اثر آندری نورتون اولین داستان کوتاه خود را در سال ۱۹۸۶ نوشت که در سال ۱۹۸۷ به چاپ رسید. وی سپس به دلیل مشکلات مالی مدتی به عنوان مسئول انبار و بعد از آن دفتردار امانت‌فروشی مشغول به کار شد.
-
-                                در سال ۱۹۸۸ با حماسه‌ی هما به شهرت رسید و به عنوان نویسنده‌ی منتخب نیویورک تایمز انتخاب شد و کتابش به زبان‌های ایتالیایی، چک، لهستانی، ترکی، روسی، دانمارکی و فرانسوی ترجمه گردید. وی در حال حاضر نویسنده‌ی اصلی سری نیزه‌ی اژدها است که خود آن را با نام قلمروی اژدها می‌شناسد. از دیگر نوشته‌های مشهور وی کتاب‌ها و مانگاهایی از هنر نبرد است که متعلق به شرکت سرگرمی‌های بلیزارد است. مجموعه کتاب‌های دیابلو (معادل شیطان به اسپانیول) وی نیز در میان علاقه‌مندان ژانر فانتزی-وحشت مورد استقبال گرمی قرار گرفته‌است.
-                            </p>
-                            <h4 class="titles">
-                                دانلود نسخه انگلیسی
-                            </h4>
-                            <a href="https://www.goodreads.com/book/show/6600527-stormrage?ac=1&from_search=true&qid=hw6CklBA1c&rank=1" target="_blank">
-                                https://www.goodreads.com/book/show/6600527-stormrage?ac=1&from_search=true&qid=hw6CklBA1c&rank=1
-                            </a>
-                        </div>
+            
+            <div class="detailes">
+                <div class="inner-container clf">
+                    <div class="detail">
+                        <ul class="detail-menu">
+                            <li class="detail-item">عنوان</li>
+                            <li class="detail-item data"> استورمریج</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">حجم فایل</li>
+                            <li class="detail-item data">6.38 مگابایت</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item"> صفحه</li>
+                            <li class="detail-item data">432</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">سال انتشار</li>
+                            <li class="detail-item data">2010</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">نویسنده</li>
+                            <li class="detail-item data"><span>Richard A.Knaak</span></li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">مترجم</li>
+                            <li class="detail-item data"> افشین اردشیری</li>
+                        </ul>
                     </div>
-                    <!-- detailes section -->
-                    <div class="main-detailes">
-                        <figure class="cover-container">
-                            <img src="../img/15-Stormrage/cover.jpg" class="cover-img" alt="DawnOfTheAspects-coverImage">
-                        </figure>
-                        <div class="detail">
-                            <div class="clf">
-                                <div class="labels">
-                                    <label for="">عنوان </label>
-                                    <label for="">حجم فایل</label>
-                                    <label for="">تعداد صفحه</label>
-                                    <label for="">سال انتشار</label>
-                                    <label for="">ناشر</label>
-                                    <label for="">نویسنده</label>
-                                    <label for="">مترجم</label>
-                                    <label for="">ژانر</label>
-                                    <label for="">امتیاز</label>
-                                </div>
-                                <div class="values">
-                                    <div>دنیای وارکرفت :  استورمریج </div>
-                                    <div>6.38 مگابایت</div>
-                                    <div>432</div>
-                                    <div>2010</div>
-                                    <div>
-                                        <a href="https://www.simonandschuster.com/" target="_blank">
-                                            <img src="../img/lsfi/simon-schuster-logotype.jpg" class="publisher">
-                                        </a>
-                                    </div>
-                                    <div class="author">Richard A.knaak</div>
-                                    <div>افشین اردشیری</div>
-                                    <div>
-                                        <span>فانتزی</span> ,
-                                        <span>حماسی</span> ,
-                                        <span>ماجراجویی</span>
-                                    </div>
-                                    <!-- rating star -->
-                                    <div class="rating-container">
-                                        <a href="https://www.goodreads.com/book/show/6600527-stormrage?ac=1&from_search=true&qid=hw6CklBA1c&rank=1" target="_blank">
-                                            <ul class="rating-menu">
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star1.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="../pdf src/15-Stormrage.rar" class="download-button">download</a>
+                    <a href="../pdf src/15-Stormrage.rar">
+                        <div class="download-container">
+                            <button class="download-button">DOWNLOAD</button>
                         </div>
-                    </div>
-                </section>
-                <section class="main-sec-row ">
-                    <!-- suggestion-box -->
-                    <div class="suggestion-box clf">
-                        <div class="card" >
-                            <figure class="figure">
-                                <img src="../img/14-Wrath of the lichking/card.png" alt="" class="card-img"> 
-                                <figcaption class="fig-cap"> ARTHAS <br> WRATH OF THE LICHKING</figcaption> 
-                                <a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="card-link">کتاب آرتاس :ظهور لیچکینگ</a> 
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/18-Jaina-Tides of war/card.png" alt="" class="card-img">
-                                <figcaption class="fig-cap">JAINA <br> TIDES OF WAR</figcaption>
-                                <a href="../inside pgs/Jaina,TidesOfWar.html" class="card-link">کتاب جاینا : امواج جنگ</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/19-voljin/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">VOLJIN <br> SHADOW OF HORDE</figcaption>
-                                <span></span>
-                                <a href="../inside pgs/Voljin,ShadowOfHorde.html" class="card-link">کتاب وولجین:سایه هورد</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/10-lord of clans/card.png" alt="" class="card-img">
-                                <figcaption class="fig-cap">THRALL <br> LORD OF CLANS</figcaption>
-                                <a href="../inside pgs/LordOfClans.html" class="card-link">کتاب ترال : ارباب قبایل</a>
-                            </figure>
-                        </div> 
-                </section>
+                    </a>
+                </div>
             </div>
-        </main>
-        <!-- ======================================== -->
+            <div class="inner-container">
+                <h4 class="author-title ttl">درباره نویسنده </h4>
+                <p class="abstract">
+                    ریچارد ا. ناک نویسنده‌ی داستان‌های فانتزی و از نویسندگان منتخب نیویورک تایمز برای نگارش داستان حماسه‌ی هوما است. وی متولد ۲۸ مِه ۱۹۶۱ در شهر شیکاگو از پدری انگلیسی و مادری آمریکایی است. زندگی‌نامه ریچارد ناک تحصیلات اولیه‌ی خود را در به اصرار مادرش در رشته‌ی شیمی در دانشگاه چمپیون-اوربانای ایلینوز شروع نمود، ولی در میانه‌ی راه آن را علت علاقه به نویسندگی ترک گفت و به زادگاه پدرش انگلستان رفته و مدتی را در آکسفورد در رشته‌ی ریشه‌های زبان مشغول تحصیل شد. یک سال بعد به دلیل مشکلات پدرش به آمریکا بازگشته و در دانشگاه سابقش در رشته‌ی علم معانی مشغول به تحصیل شد و چهار سال بعد با مدرک لیسانس دانشگاه را ترک کرد و به مطالعات شخصی بر روی زبان‌های کهن مشغول شد. بعد از خواندن رمان طوفان برفراز سحرسالار اثر آندری نورتون اولین داستان کوتاه خود را در سال ۱۹۸۶ نوشت که در سال ۱۹۸۷ به چاپ رسید. وی سپس به دلیل مشکلات مالی مدتی به عنوان مسئول انبار و بعد از آن دفتردار امانت‌فروشی مشغول به کار شد. در سال ۱۹۸۸ با حماسه‌ی هما به شهرت رسید و به عنوان نویسنده‌ی منتخب نیویورک تایمز انتخاب شد و کتابش به زبان‌های ایتالیایی، چک، لهستانی، ترکی، روسی، دانمارکی و فرانسوی ترجمه گردید. وی در حال حاضر نویسنده‌ی اصلی سری نیزه‌ی اژدها است که خود آن را با نام قلمروی اژدها می‌شناسد. از دیگر نوشته‌های مشهور وی کتاب‌ها و مانگاهایی از هنر نبرد است که متعلق به شرکت سرگرمی‌های بلیزارد است. مجموعه کتاب‌های دیابلو (معادل شیطان به اسپانیول) وی نیز در میان علاقه‌مندان ژانر فانتزی-وحشت مورد استقبال گرمی قرار گرفته‌است. 
+                </p>
+                <h4 class="e-version ttl inner-container"> دانلود نسخه انگلیسی </h4>
+                <a href="https://www.goodreads.com/book/show/6600527-stormrage?ac=1&from_search=true&qid=hw6CklBA1c&rank=1 " class=" abstract e-link">https://www.goodreads.com/book/show/6600527-stormrage?ac=1&from_search=true&qid=hw6CklBA1c&rank=1 </a>
+            </div>
+            <!-- cards -->
+            <div class="card-container clf">
+            <div class="inner-container">
+                    <div class="card">
+                        <a href="../inside pgs/WellOfEternity.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/1-War of ancients-Well of eternity/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : چشمه جاودانگی</figcaption>
+                                <span class="card-number"> کتاب اول</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/DemonSoul.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/2-War of ancients-Demon soul/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : اهریمن روان</figcaption>
+                                <span class="card-number">کتاب دوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/TheSundering.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/3-War of ancients-Sundering/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : شکافت</figcaption>
+                                <span class="card-number">کتاب سوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/RiseOfTheHorde.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/4-Rise of the horde/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">طلوع هورد</figcaption>
+                                <span class="card-number">کتاب چهارم</span>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
         <!-- footer -->
-        <footer class="inner-container2 clf">
+        <footer class=" clf">
             <div class="inner-container">
                 <ul class="footer-menu">
-                    <li class="footer-item">
-                        <a href="../main.html">
-                            <img src="../img/lsfi/13.png" alt="" class="home">
-                        </a>
-                    </li>
+                    <li class="footer-item"><a href="#homee" class="footer-link" >خانه</a></li>
                     <li class="footer-item"><a href="http://kalimdor.ir/" class="footer-link" target="_blank">کالیمدور</a></li>
                     <li class="footer-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="footer-link"  target="_blank">کمیک ها</a></li>
                     <li class="footer-item">
-                        <a href="#anchor" class="footer-link">کرونیکل</a>
+                        <a href="#homee" class="footer-link">کرونیکل</a>
                     </li>
-                    <li class="footer-item"><a href="../inside pgs/shadowlands.html" class="footer-link">شدولندز</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">شدولندز</a></li>
                 </ul>
                 <a href="mailto:kourosh.elkaie@gmail.com" class="mail">kourosh.elkaie@gmail.com</a>
             </div>
         </footer>
-    </section>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+

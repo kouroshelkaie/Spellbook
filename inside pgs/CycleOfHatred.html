@@ -1,5 +1,5 @@
 <!DOCTYPE html 5>
-<html lang="fa" lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -14,233 +14,190 @@
     <meta property="og:site_name" content="spellbook.ir">
     <meta property="og:title" content="spellbook">
     <meta property="og:description" content="world of warcraft story timeline in order">
-    <link rel="stylesheet" href="../style/inside pgs/insidepage.css">
+    <link rel="stylesheet" href="../style/insidepage.css">
     <script src="../script/toggle.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../script/filterSearch.js" defer></script>
-    <link rel="icon" href="../img/lsfi/13.png" type="image/gif" sizes="32x32">
-    <title>دنیای وارکرفت :  چرخه نفرت</title>
+    <link rel="icon" type="image/gif" href="../img/lsfi/13.png">
+    <title> چرخه نفرت   </title>
 </head>
 <body id="bdy">
-    <section class="outer-container">
-        <!-- header -->
-        <header class="header">
-            <h1 class="e-title" data-aos="fade-up" data-aos-duration="2000">CYCLE OF HATRED</h1>
-            <figure>
-                <img src="../img/17-Cycle of hatred/banner.png" class="banner-img">
-            </figure>
-            <div class="inner-container">
-                <button onclick="sidebarToggle()">
-                    <img src="../img/lsfi/icons/menu1.svg" class="sidebar-button">
+    <div class="outer-container">
+       <div class="header">
+        <div class="navigation clf">
+            <a href="../index.html"><img src="../img/lsfi/13.png" class="nav-logo"></a>
+            <ul class="navigation-bar">
+                <li class="nav-item" id="homee"><a href="../index.html" class="nav-link" > خانه</a></li>
+                <li class="nav-item"><a href="http://kalimdor.ir/" class="nav-link" target="_blank">کالیمدور</a></li>
+                <li class="nav-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="nav-link" target="_blank">کمیک ها</a></li>
+                <li class="nav-item" id="forhover"><a class="nav-link"> کرونیکل  <i class="fa fa-chevron-down arrow"></i></a>
+                    <ul class="sub-navigation">
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link">کرونیکل : جلد دوم</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item"><a href="" class="nav-link shadowlands">شدولندز</a></li>
+            </ul>
+            <img src="../img/lsfi/icons/menu1.svg" alt="" class="sidebar-button" onclick="sidebarToggle()">
+        </div>
+       </div> 
+        <!-- bar -->
+        <div class="inner-container clf">
+            <div class="bar">
+                <div class="choice">
+                    <a href="#" class="book">کتاب ها</a>
+                    <a href="http://kalimdor.ir/category/articles/" class="article">مقالات</a>
+                </div>
+                <button class="searchbar" onclick="sidebarToggle()"> 
+                    Search &nbsp;&nbsp;&nbsp;<i class="fa fa-search"></i>
                 </button>
-                <!-- header-navigation -->
-                <nav class="navigation" id="navi">
-                    <ul class="nav-menu" id="nvmn">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">خانه</a></li> 
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
-                        <li class="nav-item" id="hoverable">
-                            <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
-                            <ul class="subnav-menu"  id="chro" >
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
-                    </ul>
-                </nav>
             </div>
-            <!-- sidebar -->
-            <div class="sidebar-container">
-                <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
-                <ul class="sidebar-menu" id="sideUl">
-                    <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
-                </ul>
+        </div>
+        <div class="sidebar-container">
+            <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+            <ul class="sidebar-menu" id="sideUl">
+                <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <figure class="header-figure clf">
+                <img src="../img/17-Cycle of hatred/banner.png" alt="" class="header-img">
+                <figcaption class="header-caption">   چرخه نفرت  &nbsp;<span> کتاب سیزدهم </span></figcaption>
+                <figcaption class="header-ecaption">Cycle of hatred </figcaption>
+            </figure>
+        </div>
+        <!-- main-content -->
+            <p class="abstract inner-container">
+                برای او کار دشواری بود، اما نه تنها بخاطر خنجری که هنوز در رانش فرو رفتهبود و گام برداشتنش را آهسته ميکرد. فرار کردن از نبرد شرمآور بود. اما بیروک ميدانست که وظیفهی مهمتری برای انجام دارد؛ شمشیر سوزان بازگشتهبود، اما آنها اينبار انسان بودند و تمام محاجمان، نه فقط آن دوتايي که او قبال متوجه آنها شدهبود، تصوير شمشیر شعلهور را به گونهای با خود حمل ميکردند: يك گردنبند، يك خالكوبي، چیزی. اين اطالعات بايد به ترال ميرسید. بنابراين بیروک دويد. آنگاه سكندری خورد. پای چپش آنگونه که بايد از بلند شدن سر باز ميزد؛ اما پای راستش به دويدن ادامه داد، و به همین خاطر به زمین افتاد، علفهای بلند و گرد و خاک به درون بیني، دهان و چشمش رفت. »بايد... بلند... بشوم...« »تو هیچ جا نميری، هیوال.« بیروک ميتوانست صدا را بشنود، صدای قدمهای انسانها، و سپس هنگامي که دوتن از آنها بر روی پشتش نشستند و او را ساکن نگه داشتند، فشار را احساس کرد. »چون که به اين خاطر؛ دورت به سر اومده. اورکها به اين دنیا تعلق ندارن، برای همین ميخوايیم بندازيمت بیرون. روشنه؟« بیروک باتالش توانست سرش را باال بیاورد تا بتواند دو انسان را ببیند. به آنها تف کرد. انسانها تنها خنديدند. »بیايین تمومش کنیم، بچهها. گالتاک اردناش!« پنجتای ديگر به يك شكل پاسخ دادند: »گالتاک اردناش!« ... 
+            </p>
+            <div class="inner-container">
+                <h4 class="e-version ttl">درباره کتاب</h4>
             </div>
-        </header>
-        <!-- ==================================================== -->
-        <!-- main-section -->
-        <main class="main">
-            <div class="inner-container2">
-                <section class="main-first-row clf">
-                    <div class="main-text">
-                        <div class="main-paragraphs">
-                            <h4 class="titles">کتاب سیزدهم </h4>
-                            <p class="main-contents">
-                                برای او کار دشواری بود، اما نه تنها بخاطر خنجری که هنوز در رانش فرو رفتهبود و گام برداشتنش را آهسته ميکرد. فرار کردن از نبرد
-                                شرمآور بود. اما بیروک ميدانست که وظیفهی مهمتری برای انجام دارد؛ شمشیر سوزان بازگشتهبود، اما آنها اينبار انسان بودند و تمام محاجمان،
-                                نه فقط آن دوتايي که او قبال متوجه آنها شدهبود، تصوير شمشیر شعلهور را به گونهای با خود حمل ميکردند: يك گردنبند، يك خالكوبي، چیزی.
-                                اين اطالعات بايد به ترال ميرسید.
-                                بنابراين بیروک دويد.
-                                آنگاه سكندری خورد. پای چپش آنگونه که بايد از بلند شدن سر باز ميزد؛ اما پای راستش به دويدن ادامه داد، و به همین خاطر به زمین
-                                افتاد، علفهای بلند و گرد و خاک به درون بیني، دهان و چشمش رفت.
-                                »بايد... بلند... بشوم...«
-                                »تو هیچ جا نميری، هیوال.« بیروک ميتوانست صدا را بشنود، صدای قدمهای انسانها، و سپس هنگامي که دوتن از آنها بر روی پشتش
-                                نشستند و او را ساکن نگه داشتند، فشار را احساس کرد. »چون که به اين خاطر؛ دورت به سر اومده. اورکها به اين دنیا تعلق ندارن، برای همین
-                                ميخوايیم بندازيمت بیرون. روشنه؟«
-                                بیروک باتالش توانست سرش را باال بیاورد تا بتواند دو انسان را ببیند. به آنها تف کرد.
-                                انسانها تنها خنديدند. »بیايین تمومش کنیم، بچهها. گالتاک اردناش!«
-                                پنجتای ديگر به يك شكل پاسخ دادند: »گالتاک اردناش!« ...
-                            </p>
-                            <h4 class="titles">درباره کتاب </h4>
-                            <p class="main-contents">
-                                در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند
-                                . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان
-                                 معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند،
-                                 داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی
-                                ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های
-                                 آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی
-                                 یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند
-                                 وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده
-                                 است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن
-                                ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
-                            </p>
-                            <h4 class="titles">
-                                درباره نویسنده
-                            </h4>
-                            <p class="main-contents">
-                                کیت رابرت آندرهاسی دی کاندیدو متولد 18 آوریل 1969 نویسنده و نوازنده داستان های علمی و تخیلی آمریکایی است که روی کتاب های طنز ، رمان ها ، بازی های نقش آفرینی و بازی های ویدیویی کار می کند ، از جمله کتاب های زیادی در زمینه رسانه ها برای خواصی مانند Star Trek Buffy the Vampire Slayer ، Doctor Who ، Supernatural ، Andromeda ، Farscape ، Leverage ، Spider-Man ، X-Men ، Sleepy Hollow و Stargate SG-1.
-                            </p>
-                            <h4 class="titles">
-                                دانلود نسخه انگلیسی
-                            </h4>
-                            <a href="https://www.goodreads.com/book/show/279502.Cycle_of_Hatred?ac=1&from_search=true&qid=jZfKORIH4S&rank=1" target="_blank">
-                                https://www.goodreads.com/book/show/279502.Cycle_of_Hatred?ac=1&from_search=true&qid=jZfKORIH4S&rank=1
-                            </a>
-                        </div>
+            
+            <div class="detailes">
+                <div class="inner-container clf">
+                    <div class="detail">
+                        <ul class="detail-menu">
+                            <li class="detail-item">عنوان</li>
+                            <li class="detail-item data">چرخه نفرت</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">حجم فایل</li>
+                            <li class="detail-item data">10.17 مگابایت</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item"> صفحه</li>
+                            <li class="detail-item data">159</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">سال انتشار</li>
+                            <li class="detail-item data">2006</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">نویسنده</li>
+                            <li class="detail-item data"><span>Keith R.A DeCandido</span></li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">مترجم</li>
+                            <li class="detail-item data"> بهنام حاجی زاده</li>
+                        </ul>
                     </div>
-                    <!-- detailes section -->
-                    <div class="main-detailes">
-                        <figure class="cover-container">
-                            <img src="../img/17-Cycle of hatred/cover.jpg" class="cover-img" alt="DawnOfTheAspects-coverImage">
-                        </figure>
-                        <div class="detail">
-                            <div class="clf">
-                                <div class="labels">
-                                    <label for="">عنوان </label>
-                                    <label for="">حجم فایل</label>
-                                    <label for="">تعداد صفحه</label>
-                                    <label for="">سال انتشار</label>
-                                    <label for="">ناشر</label>
-                                    <label for="">نویسنده</label>
-                                    <label for="">مترجم</label>
-                                    <label for="">ژانر</label>
-                                    <label for="">امتیاز</label>
-                                </div>
-                                <div class="values">
-                                    <div>دنیای وارکرفت :  چرخه نفرت </div>
-                                    <div>1.17 مگابایت</div>
-                                    <div>159</div>
-                                    <div>2006</div>
-                                    <div>
-                                        <a href="https://www.simonandschuster.com/" target="_blank">
-                                            <img src="../img/lsfi/simon-schuster-logotype.jpg" class="publisher">
-                                        </a>
-                                    </div>
-                                    <div class="author"> Keith R.A DeCandido</div>
-                                    <div> بهنام حاجی زاده</div>
-                                    <div>
-                                        <span>فانتزی</span> ,
-                                        <span>حماسی</span> ,
-                                        <span>ماجراجویی</span>
-                                    </div>
-                                    <!-- rating star -->
-                                    <div class="rating-container">
-                                        <a href="https://www.goodreads.com/book/show/279502.Cycle_of_Hatred?ac=1&from_search=true&qid=jZfKORIH4S&rank=1" target="_blank">
-                                            <ul class="rating-menu">
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star1.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="../pdf src/13-Cycle of hatred.rar" class="download-button">download</a>
+                    <a href="../pdf src/13-Cycle of hatred.rar">
+                        <div class="download-container">
+                            <button class="download-button">DOWNLOAD</button>
                         </div>
-                    </div>
-                </section>
-                <section class="main-sec-row ">
-                    <!-- suggestion-box -->
-                    <div class="suggestion-box clf">
-                        <div class="card" >
-                            <figure class="figure">
-                                <img src="../img/14-Wrath of the lichking/card.png" alt="" class="card-img"> 
-                                <figcaption class="fig-cap"> ARTHAS <br> WRATH OF THE LICHKING</figcaption> 
-                                <a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="card-link">کتاب آرتاس :ظهور لیچکینگ</a> 
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/18-Jaina-Tides of war/card.png" alt="" class="card-img">
-                                <figcaption class="fig-cap">JAINA <br> TIDES OF WAR</figcaption>
-                                <a href="../inside pgs/Jaina,TidesOfWar.html" class="card-link">کتاب جاینا : امواج جنگ</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/7-Behinde the portal/card.png" alt="" class="card-img">
-                                <figcaption class="fig-cap">BEYOND THE PORTAL</figcaption>
-                                <span></span>
-                                <a href="../inside pgs/BeyondThePortal.html" class="card-link">کتاب آنسوی درگاه</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/10-lord of clans/card.png" alt="" class="card-img">
-                                <figcaption class="fig-cap">THRALL <br> LORD OF CLANS</figcaption>
-                                <a href="../inside pgs/LordOfClans.html" class="card-link">کتاب ترال : ارباب قبایل</a>
-                            </figure>
-                        </div> 
-                </section>
+                    </a>
+                </div>
             </div>
-        </main>
-        <!-- ======================================== -->
+            <div class="inner-container">
+                <h4 class="author-title ttl">درباره نویسنده </h4>
+                <p class="abstract">
+                    کیت رابرت آندرهاسی دی کاندیدو متولد 18 آوریل 1969 نویسنده و نوازنده داستان های علمی و تخیلی آمریکایی است که روی کتاب های طنز ، رمان ها ، بازی های نقش آفرینی و بازی های ویدیویی کار می کند ، از جمله کتاب های زیادی در زمینه رسانه ها برای خواصی مانند Star Trek Buffy the Vampire Slayer ، Doctor Who ، Supernatural ، Andromeda ، Farscape ، Leverage ، Spider-Man ، X-Men ، Sleepy Hollow و Stargate SG-1. 
+                </p>
+                <h4 class="e-version ttl inner-container"> دانلود نسخه انگلیسی </h4>
+                <a href="https://www.goodreads.com/book/show/279502.Cycle_of_Hatred?ac=1&from_search=true&qid=jZfKORIH4S&rank=1 " class=" abstract e-link">https://www.goodreads.com/book/show/279502.Cycle_of_Hatred?ac=1&from_search=true&qid=jZfKORIH4S&rank=1 </a>
+            </div>
+            <!-- cards -->
+            <div class="card-container clf">
+            <div class="inner-container">
+                    <div class="card">
+                        <a href="../inside pgs/WellOfEternity.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/1-War of ancients-Well of eternity/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : چشمه جاودانگی</figcaption>
+                                <span class="card-number"> کتاب اول</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/DemonSoul.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/2-War of ancients-Demon soul/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : اهریمن روان</figcaption>
+                                <span class="card-number">کتاب دوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/TheSundering.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/3-War of ancients-Sundering/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : شکافت</figcaption>
+                                <span class="card-number">کتاب سوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/RiseOfTheHorde.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/4-Rise of the horde/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">طلوع هورد</figcaption>
+                                <span class="card-number">کتاب چهارم</span>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
         <!-- footer -->
-        <footer class="inner-container2 clf">
+        <footer class=" clf">
             <div class="inner-container">
                 <ul class="footer-menu">
-                    <li class="footer-item">
-                        <a href="../main.html">
-                            <img src="../img/lsfi/13.png" alt="" class="home">
-                        </a>
-                    </li>
+                    <li class="footer-item"><a href="#homee" class="footer-link" >خانه</a></li>
                     <li class="footer-item"><a href="http://kalimdor.ir/" class="footer-link" target="_blank">کالیمدور</a></li>
                     <li class="footer-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="footer-link"  target="_blank">کمیک ها</a></li>
                     <li class="footer-item">
-                        <a href="#anchor" class="footer-link">کرونیکل</a>
+                        <a href="#homee" class="footer-link">کرونیکل</a>
                     </li>
-                    <li class="footer-item"><a href="../inside pgs/shadowlands.html" class="footer-link">شدولندز</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">شدولندز</a></li>
                 </ul>
                 <a href="mailto:kourosh.elkaie@gmail.com" class="mail">kourosh.elkaie@gmail.com</a>
             </div>
         </footer>
-    </section>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+

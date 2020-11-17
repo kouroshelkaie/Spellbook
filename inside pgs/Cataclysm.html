@@ -1,5 +1,5 @@
 <!DOCTYPE html 5>
-<html lang="fa" lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -14,246 +14,190 @@
     <meta property="og:site_name" content="spellbook.ir">
     <meta property="og:title" content="spellbook">
     <meta property="og:description" content="world of warcraft story timeline in order">
-    <link rel="stylesheet" href="../style/inside pgs/insidepage.css">
+    <link rel="stylesheet" href="../style/insidepage.css">
     <script src="../script/toggle.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../script/filterSearch.js" defer></script>
-    <link rel="icon" href="../img/lsfi/13.png" type="image/gif" sizes="32x32">
-    <title>دنیای وارکرفت : فروپاشی</title>
+    <link rel="icon" type="image/gif" href="../img/lsfi/13.png">
+    <title>  فروپاشی</title>
 </head>
 <body id="bdy">
-    <section class="outer-container">
-        <!-- header -->
-        <header class="header">
-            <h1 class="e-title" data-aos="fade-up" data-aos-duration="2000">THE SHATTERING</h1>
-            <figure>
-                <img src="../img/16-Catalysm/banner.jpg" class="banner-img">
-            </figure>
-            <div class="inner-container">
-                <button onclick="sidebarToggle()">
-                    <img src="../img/lsfi/icons/menu1.svg" class="sidebar-button">
+    <div class="outer-container">
+       <div class="header">
+        <div class="navigation clf">
+            <a href="../index.html"><img src="../img/lsfi/13.png" class="nav-logo"></a>
+            <ul class="navigation-bar">
+                <li class="nav-item" id="homee"><a href="../index.html" class="nav-link" > خانه</a></li>
+                <li class="nav-item"><a href="http://kalimdor.ir/" class="nav-link" target="_blank">کالیمدور</a></li>
+                <li class="nav-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="nav-link" target="_blank">کمیک ها</a></li>
+                <li class="nav-item" id="forhover"><a href="" class="nav-link"> کرونیکل  <i class="fa fa-chevron-down arrow"></i></a>
+                    <ul class="sub-navigation">
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
+                        <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link">کرونیکل : جلد دوم</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item"><a href="" class="nav-link shadowlands">شدولندز</a></li>
+            </ul>
+            <img src="../img/lsfi/icons/menu1.svg" alt="" class="sidebar-button" onclick="sidebarToggle()">
+        </div>
+       </div> 
+        <!-- bar -->
+        <div class="inner-container clf">
+            <div class="bar">
+                <div class="choice">
+                    <a href="#" class="book">کتاب ها</a>
+                    <a href="http://kalimdor.ir/category/articles/" class="article">مقالات</a>
+                </div>
+                <button class="searchbar" onclick="sidebarToggle()"> 
+                    Search &nbsp;&nbsp;&nbsp;<i class="fa fa-search"></i>
                 </button>
-                <!-- header-navigation -->
-                <nav class="navigation" id="navi">
-                    <ul class="nav-menu" id="nvmn">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">خانه</a></li> 
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="http://kalimdor.ir/">کالیمدور</a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://worldofwarcraft.com/en-us/story#tab=comics">کمیک ها</a></li>
-                        <li class="nav-item" id="hoverable">
-                            <a class="nav-link" target="_blank" id="anchor">کرونیکل  <span class="arrow">&#x25BC</span></a>
-                            <ul class="subnav-menu"  id="chro" >
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 01 Complete.pdf" class="subnav-link"> کرونیکل : جلد اول</a></li>
-                                <li class="subnav-item"><a href="../pdf src/chronicle/Chronicle Vol 02 Complete.pdf" class="subnav-link"> کرونیکل : جلد دوم</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="../inside pgs/shadowlands.html">شدولندز</a></li>
-                    </ul>
-                </nav>
             </div>
-            <!-- sidebar -->
-            <div class="sidebar-container">
-                <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
-                <ul class="sidebar-menu" id="sideUl">
-                    <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
-                    <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
-                </ul>
+        </div>
+        <div class="sidebar-container">
+            <input type="text" placeholder="جستجو" class="inp" id="inpt" onfocus="this.placeholder=''" onblur="this.placeholder='جستجو'" onkeyup="filterSearch()">
+            <ul class="sidebar-menu" id="sideUl">
+                <li class="sidebar-item"><a href="../inside pgs/WellOfEternity.html" class="sidebar-link"> کتاب نبرد باستانیان : چشمه جاودانگی </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DemonSoul.html" class="sidebar-link">کتاب نبرد باستانیان : اهریمن روان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TheSundering.html" class="sidebar-link">کتاب نبرد باستانیان : شکافت</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/RiseOfTheHorde.html" class="sidebar-link">کتاب طلوع هورد</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LastGuardian.html" class="sidebar-link">کتاب آخرین نگهبان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/TidesOfDarkness.html" class="sidebar-link">کتاب امواج تاریکی</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/BeyondThePortal.html" class="sidebar-link">کتاب آنسوی درگاه</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DayOfDragon.html" class="sidebar-link">کتاب روز اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/LordOfClans.html" class="sidebar-link">کتاب ترال : ارباب قبایل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/OfBloodAndHonor.html" class="sidebar-link">کتاب از خون و افتخار</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/DawnOfTheAspects.html" class="sidebar-link">کتاب طلوع سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="sidebar-link">کتاب آرتاس : خشم لیچکینگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/CycleOfHatred.html" class="sidebar-link"> کتاب چرخه نفرت </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/NightOfDragon.html" class="sidebar-link">کتاب شب اژدها</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Stormrage.html" class="sidebar-link">کتاب استورمریج</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/WolfHeart.html" class="sidebar-link">کتاب گرگدل</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Thrall,TwilightOfTheAspects.html" class="sidebar-link">کتاب ترال : گرگ و میش سیمایان</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Voljin,ShadowOfHorde.html" class="sidebar-link">کتاب وولجین : سایه های هورد </a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Jaina,TidesOfWar.html" class="sidebar-link">کتاب جاینا : امواج جنگ</a></li>
+                <li class="sidebar-item"><a href="../inside pgs/Cataclysm.html" class="sidebar-link">کتاب فروپاشی</a></li>
+            </ul>
+        </div>
+        <div class="inner-container">
+            <figure class="header-figure clf">
+                <img src="../img/16-Catalysm/banner.jpg" alt="" class="header-img">
+                <figcaption class="header-caption">  فروپاشی&nbsp;<span> کتاب بیستم </span></figcaption>
+                <figcaption class="header-ecaption"> The Shattering </figcaption>
+            </figure>
+        </div>
+        <!-- main-content -->
+            <p class="abstract inner-container">
+            صدای برخورد باران با چرم زمختی که کلبهی کوچک را پوشانده بود، مانند طبلی بود که توسط دستانی چابک نواخته میشد. این کلبه نیز 4 مانند تمامی کلبه های ساختهی دست اورک ها، خوب ساخته شده بود؛ هیچ آبی به داخل نفوذ نمیکرد، اما با این حال هیچ چیز نمیتوانست جلوی رطوبت خنک هوا را بگیرد. اگر هوا تغییر میکرد، باران میتوانست تبدیل به برف شود؛ در هر صورت، سرمای مرطوب، به عمق استخوانهای 2 درک تارِ پیر نفوذ میکرد و ماهیچههایش را هنگام خواب منقبض نگه میداشت. 8 اما چیزی که باعث میشد شمن سالخورده بغلتد و بجهد سرما نبود، رویاها بودند. درکتار همیشه رویاها و الهاماتی پیشگویانه داشت و این یک هدیه بود. از آنجا که دیگر بینایی فیزیکی نداشت، یک دید ماورایی به او کمک 4 می کرد. اما از زمان نبرد علیه کابوس ، هدیه ی او رو به زوال می رفت. رویاهایش در طول آن دوران دهشتناک بدتر می شد، و خواب نه به معنای استراحت و تجدید قوا، بلکه به معنای دهشت بود. آن ها او را پیر کردند و از کسی که پیر اما قوی بود، چیزی شکننده، و گاهآ یک کهنسال کج خلق ساخته بودند. امیدوار بود که با شکست کابوس، رویاهایش به حالت عادی بازگردند. اما اگرچه شدتشان کاسته می شد، باز هم رویاهایش خیلی خیلی تیره بود. در رویاهایش میتوانست ببیند اما آرزوی نابینایی میکرد. در یکی از این رویا ها، تنها بر روی کوهی ایستاده بود. به نظر میرسید خورشید از حالت عادی نزدیکتر و زشتتر است و ورمکرده. خورشید تَه رنگی به مانند خون بر اقیانوسی که بر پایه ی کوه گسترده شده بود میانداخت. میتوانست چیزی بشنود... غرشی بم در دور دست که باعث شد دندان هایش به هم فشرده شود و پوستش زق زق کند. پیش از آن هرگز آن صدا را نشنیده بود، اما به واسطه ی ارتباطش با عناصر، میدانست به این معناست که چیزی، واقعآ اشتباه است. چند لحظه بعد، آب به جنب و جوش درآمد و در پایهی کوه خشمگینانه میخروشید. امواج بلندتر و گرسنهتر شدند، درست مثل اینکه چیزی پلید و ترسناک در زیر سطح خروشانشان میجنبید. درکتار، حتی بر روی کوه میدانست که در امان نبود، میدانست که دیگر هیچ چیز در امان نبود، و میتوانست در زیر پایش، ارتعاش سنگهایی را که زمانی استوار بودند احساس کند. انگشتانش محکم و دردناک، به دور عصایش حلقه زدند، گویی طول پیچدار آن، خالف اقیانوسِ چرخان و کوهِ غران، میتوانست ثابت و ایمن باقی بماند. و سپس، بدون هیچ هشداری، اتفاقی افتاد. شکافی در طول زمین زیر پایش به شکلی زیگ زاگی کشیده شد. با فریاد و با حالتی میان پرش و سقوط، در حالی که که شکاف، مانند دهانی در تالش برای بلعیدن او باز میشد، کنار رفت. عصا از دستش رها شد و به میان آروارههای بازشده فرو افتاد. همان طور که باد میوزید، درکتار به تکه سنگی که باال آمدهبود چنگ انداخت، لرزان از لرزش زمین، با چشمانی که چیز زیادی از اقیانوس خونین رنگ زیر پایش نمیدیدند، نگریست. ... 
+            </p>
+            <div class="inner-container">
+                <h4 class="e-version ttl">درباره کتاب</h4>
             </div>
-        </header>
-        <!-- ==================================================== -->
-        <!-- main-section -->
-        <main class="main">
-            <div class="inner-container2">
-                <section class="main-first-row clf">
-                    <div class="main-text">
-                        <div class="main-paragraphs">
-                            <h4 class="titles">کتاب بیستم </h4>
-                            <p class="main-contents">
-                                صدای برخورد باران با چرم زمختی که کلبهی کوچک را پوشانده بود، مانند طبلی بود که توسط دستانی چابک نواخته میشد. این کلبه نیز
-                                4 مانند تمامی کلبه های ساختهی دست اورک
-                                ها، خوب ساخته شده بود؛ هیچ آبی به داخل نفوذ نمیکرد، اما با این حال هیچ چیز نمیتوانست
-                                جلوی رطوبت خنک هوا را بگیرد. اگر هوا تغییر میکرد، باران میتوانست تبدیل به برف شود؛ در هر صورت، سرمای مرطوب، به عمق استخوانهای
-                                2 درک تارِ
-                                پیر نفوذ میکرد و ماهیچههایش را هنگام خواب منقبض نگه میداشت.
-                                8 اما چیزی که باعث میشد شمن
-                                سالخورده بغلتد و بجهد سرما نبود، رویاها بودند.
-                                درکتار همیشه رویاها و الهاماتی پیشگویانه داشت و این یک هدیه بود. از آنجا که دیگر بینایی فیزیکی نداشت، یک دید ماورایی به او کمک
-                                4 می کرد. اما از زمان نبرد علیه کابوس
-                                ، هدیه ی او رو به زوال می رفت. رویاهایش در طول آن دوران دهشتناک بدتر می شد، و خواب نه به
-                                معنای استراحت و تجدید قوا، بلکه به معنای دهشت بود. آن ها او را پیر کردند و از کسی که پیر اما قوی بود، چیزی شکننده، و گاهآ یک کهنسال
-                                کج خلق ساخته بودند. امیدوار بود که با شکست کابوس، رویاهایش به حالت عادی بازگردند. اما اگرچه شدتشان کاسته می شد، باز هم رویاهایش
-                                خیلی خیلی تیره بود.
-                                در رویاهایش میتوانست ببیند اما آرزوی نابینایی میکرد.
-                                در یکی از این رویا ها، تنها بر روی کوهی ایستاده بود. به نظر میرسید خورشید از حالت عادی نزدیکتر و زشتتر است و ورمکرده. خورشید
-                                تَه رنگی به مانند خون بر اقیانوسی که بر پایه ی کوه گسترده شده بود میانداخت. میتوانست چیزی بشنود... غرشی بم در دور دست که باعث
-                                شد دندان هایش به هم فشرده شود و پوستش زق زق کند. پیش از آن هرگز آن صدا را نشنیده بود، اما به واسطه ی ارتباطش با عناصر، میدانست
-                                به این معناست که چیزی، واقعآ اشتباه است. چند لحظه بعد، آب به جنب و جوش درآمد و در پایهی کوه خشمگینانه میخروشید. امواج بلندتر و
-                                گرسنهتر شدند، درست مثل اینکه چیزی پلید و ترسناک در زیر سطح خروشانشان میجنبید. درکتار، حتی بر روی کوه میدانست که در امان نبود،
-                                میدانست که دیگر هیچ چیز در امان نبود، و میتوانست در زیر پایش، ارتعاش سنگهایی را که زمانی استوار بودند احساس کند. انگشتانش محکم
-                                و دردناک، به دور عصایش حلقه زدند، گویی طول پیچدار آن، خالف اقیانوسِ چرخان و کوهِ غران، میتوانست ثابت و ایمن باقی بماند. و سپس،
-                                بدون هیچ هشداری، اتفاقی افتاد.
-                                شکافی در طول زمین زیر پایش به شکلی زیگ زاگی کشیده شد. با فریاد و با حالتی میان پرش و سقوط، در حالی که که شکاف، مانند دهانی
-                                در تالش برای بلعیدن او باز میشد، کنار رفت. عصا از دستش رها شد و به میان آروارههای بازشده فرو افتاد. همان طور که باد میوزید، درکتار
-                                به تکه سنگی که باال آمدهبود چنگ انداخت، لرزان از لرزش زمین، با چشمانی که چیز زیادی از اقیانوس خونین رنگ زیر پایش نمیدیدند،
-                                نگریست. ...
-                            </p>
-                            <h4 class="titles">درباره کتاب </h4>
-                            <p class="main-contents">
-                                در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند
-                                . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان
-                                 معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند،
-                                 داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی
-                                ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های
-                                 آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی
-                                 یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند
-                                 وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده
-                                 است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن
-                                ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
-                            </p>
-                            <h4 class="titles">
-                                درباره نویسنده
-                            </h4>
-                            <p class="main-contents">
-                                کریستی گلدن، نویسنده بیش از سی رمان و چند داستان کوتاه در زمینه‌های علمی تخیلی، فانتزی و وحشت است. او در آمریکا به دنیا آمده است. او نویسنده سری کتاب‌های وارکرافت است. وی هم‌اکنون با همسر و فرزندانش در کلرادو آمریکا زندگی می‌کند.
-                            </p>
-                            <h4 class="titles">
-                                دانلود نسخه انگلیسی
-                            </h4>
-                            <a href="https://www.goodreads.com/book/show/20105391-the-shattering?from_search=true&from_srp=true&qid=ZKzbi3G6EQ&rank=2" target="_blank">
-                                https://www.goodreads.com/book/show/20105391-the-shattering?from_search=true&from_srp=true&qid=ZKzbi3G6EQ&rank=2
-                            </a>
-                        </div>
+            
+            <div class="detailes">
+                <div class="inner-container clf">
+                    <div class="detail">
+                        <ul class="detail-menu">
+                            <li class="detail-item">عنوان</li>
+                            <li class="detail-item data">فروپاشی</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">حجم فایل</li>
+                            <li class="detail-item data">1.53 مگابایت</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item"> صفحه</li>
+                            <li class="detail-item data">352</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">سال انتشار</li>
+                            <li class="detail-item data">2011</li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">نویسنده</li>
+                            <li class="detail-item data"><span>Christie Golden</span></li>
+                        </ul>
+                        <ul class="detail-menu">
+                            <li class="detail-item">مترجم</li>
+                            <li class="detail-item data">بهنام حاجی زاده </li>
+                        </ul>
                     </div>
-                    <!-- detailes section -->
-                    <div class="main-detailes">
-                        <figure class="cover-container">
-                            <img src="../img/16-Catalysm/cover.jpg" class="cover-img" alt="DawnOfTheAspects-coverImage">
-                        </figure>
-                        <div class="detail">
-                            <div class="clf">
-                                <div class="labels">
-                                    <label for="">عنوان </label>
-                                    <label for="">حجم فایل</label>
-                                    <label for="">تعداد صفحه</label>
-                                    <label for="">سال انتشار</label>
-                                    <label for="">ناشر</label>
-                                    <label for="">نویسنده</label>
-                                    <label for="">مترجم</label>
-                                    <label for="">ژانر</label>
-                                    <label for="">امتیاز</label>
-                                </div>
-                                <div class="values">
-                                    <div>دنیای وارکرفت : شکافت  </div>
-                                    <div>1.53 مگابایت</div>
-                                    <div>352 </div>
-                                    <div>2011</div>
-                                    <div>
-                                        <a href="https://www.simonandschuster.com/" target="_blank">
-                                            <img src="../img/lsfi/simon-schuster-logotype.jpg" class="publisher">
-                                        </a>
-                                    </div>
-                                    <div class="author"> Christie Golden</div>
-                                    <div> بهنام حاجی زاده</div>
-                                    <div>
-                                        <span>فانتزی</span> ,
-                                        <span>حماسی</span> ,
-                                        <span>ماجراجویی</span>
-                                    </div>
-                                    <!-- rating star -->
-                                    <div class="rating-container">
-                                        <a href="https://www.goodreads.com/book/show/20105391-the-shattering?from_search=true&from_srp=true&qid=ZKzbi3G6EQ&rank=2" target="_blank">
-                                            <ul class="rating-menu">
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star1.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                                <li class="rating-item"><img src="../img/lsfi/icons/star.svg" alt=""></li>
-                                            </ul>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="../pdf src/20-Cataclysm.rar" class="download-button">download</a>
+                    <a href="../pdf src/20-Cataclysm.rar">
+                        <div class="download-container">
+                            <button class="download-button">DOWNLOAD</button>
                         </div>
-                    </div>
-                </section>
-                <section class="main-sec-row ">
-                    <!-- suggestion-box -->
-                    <div class="suggestion-box clf">
-                        <div class="card" >
-                            <figure class="figure">
-                                <img src="../img/14-Wrath of the lichking/card.png" alt="" class="card-img"> 
-                                <figcaption class="fig-cap"> ARTHAS <br> WRATH OF THE LICHKING</figcaption> 
-                                <a href="../inside pgs/Arthas,WrathOfTheLichking.html" class="card-link">کتاب آرتاس :ظهور لیچکینگ</a> 
+                    </a>
+                </div>
+            </div>
+            <div class="inner-container">
+                <h4 class="author-title ttl">درباره نویسنده </h4>
+                <p class="abstract">
+                    در غالب موارد بازی‌های کامپیوتری در جدال با کتاب بر سر اوقات فراغت ما، پیروز شده‌اند . بعضی اوقات، ما به شدت از یک فیلم یا بازی که براساس یک رمان معروف طراحی شده استقبال می‌کنیم، اما حتی یک صفحه از همان کتاب را نخوانده‌ایم و نخواهیم خواند، داستانی که روزها و هفته ها ما را مقابل مانیتور کامپیوتر میخکوب می‌کند. داستان وارکرفت نی ز به همین سرنوشت دچار شد. شروع وارکرفت، قبل از سال ۲۰۰۱ است و تا کنون انتشار کتاب‌های آن ادامه دارد. در سال ۲۰۰۱ بازی کامپیوتری آن با موفقیت جای خود را در بازار جهانی یافت و سریع‌تر از کتاب آن، به دست ما رسید و همین موضوع باعث شد که عده‌ای تصور کنند وارکرفت، با آن داستان خارق‌العاده و پیچیده‌اش، از روی یک بازی کامپیوتری نوشته شده است! داستان وارکرفت مانند اکثر فانتزی‌های مدرن دوره ما، ریشه در پدر فانتزی‌های مدرن ، کتاب‌های تالکین و ارباب حلقه‌ها دارد... نبرد بین خیر و شر محور اصلی این فانتزی‌هاست... 
+                </p>
+                <h4 class="e-version ttl inner-container"> دانلود نسخه انگلیسی </h4>
+                <a href="https://www.goodreads.com/book/show/20105391-the-shattering?from_search=true&from_srp=true&qid=ZKzbi3G6EQ&rank=2 " class=" abstract e-link">https://www.goodreads.com/book/show/20105391-the-shattering?from_search=true&from_srp=true&qid=ZKzbi3G6EQ&rank=2 </a>
+            </div>
+            <!-- cards -->
+            <div class="card-container clf">
+            <div class="inner-container">
+                    <div class="card">
+                        <a href="../inside pgs/WellOfEternity.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/1-War of ancients-Well of eternity/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : چشمه جاودانگی</figcaption>
+                                <span class="card-number"> کتاب اول</span>
                             </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/DemonSoul.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/2-War of ancients-Demon soul/card.jpg" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : اهریمن روان</figcaption>
+                                <span class="card-number">کتاب دوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/TheSundering.html">
+                            <figure class="card-figure clf">
+                                <img src="../img/3-War of ancients-Sundering/card.png" alt="" class="card-img">
+                                <figcaption class="card-caption">نبرد باستانیان : شکافت</figcaption>
+                                <span class="card-number">کتاب سوم</span>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../inside pgs/RiseOfTheHorde.html">
+                            <figure class="card-figure clf">
                                 <img src="../img/4-Rise of the horde/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">RISE OF THE HORDE</figcaption>
-                                <a href="../inside pgs/RiseOfTheHorde.html" class="card-link">طلوع هورد</a>
+                                <figcaption class="card-caption">طلوع هورد</figcaption>
+                                <span class="card-number">کتاب چهارم</span>
                             </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/9-Night of the Dragon/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">NIGHT OF DRAGON</figcaption>
-                                <span></span>
-                                <a href="../inside pgs/NightOfDragon.html" class="card-link"> شب اژدها</a>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure class="figure">
-                                <img src="../img/15-Stormrage/card.jpg" alt="" class="card-img">
-                                <figcaption class="fig-cap">STORMRAGE</figcaption>
-                                <a href="../inside pgs/Stormrage.html" class="card-link">استورمریج</a>
-                            </figure>
-                        </div> 
-                </section>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </main>
-        <!-- ======================================== -->
         <!-- footer -->
-        <footer class="inner-container clf">
+        <footer class=" clf">
             <div class="inner-container">
                 <ul class="footer-menu">
-                    <li class="footer-item">
-                        <a href="../main.html">
-                            <img src="../img/lsfi/13.png" alt="" class="home">
-                        </a>
-                    </li>
+                    <li class="footer-item"><a href="#homee" class="footer-link" >خانه</a></li>
                     <li class="footer-item"><a href="http://kalimdor.ir/" class="footer-link" target="_blank">کالیمدور</a></li>
                     <li class="footer-item"><a href="https://worldofwarcraft.com/en-us/story#tab=comics" class="footer-link"  target="_blank">کمیک ها</a></li>
                     <li class="footer-item">
-                        <a href="#anchor" class="footer-link">کرونیکل</a>
+                        <a href="#homee" class="footer-link">کرونیکل</a>
                     </li>
-                    <li class="footer-item"><a href="../inside pgs/shadowlands.html" class="footer-link">شدولندز</a></li>
+                    <li class="footer-item"><a href="" class="footer-link">شدولندز</a></li>
                 </ul>
                 <a href="mailto:kourosh.elkaie@gmail.com" class="mail">kourosh.elkaie@gmail.com</a>
             </div>
         </footer>
-    </section>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
