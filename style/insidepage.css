@@ -447,14 +447,15 @@ a{
 @media(max-width:550px) {
   .abstract{
     padding: 0 1em;
+    font-size: .7em;
   }
 }
-@media(max-width:550px) {
+@media(max-width:350px) {
   .abstract{
+    padding: 0 1em;
     font-size: .6em;
   }
 }
-
 .author-title{
   color: #D99023;
   font-family: 'rezvan';
