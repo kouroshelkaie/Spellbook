@@ -561,13 +561,13 @@ html{
       }
       @media(max-width:500px) {
         .dot{
-          width: .4em; height: .4em;
+          width: .5em; height: .5em;
           margin: 0 .1em;
         }
       }
       .active{
         background: transparent; 
-        border: 2px solid #878686;
+        border: 2px solid #cccccc;
       }
       .dot:hover {
         background-color: #ffffff;
@@ -584,27 +584,27 @@ html{
       }
       @media(max-width:768px) {
         .indicators{
-          top: 73%;
+          top: 70%;
         }
       }
       @media(max-width:700px) {
         .indicators{
-          top: 70%;
+          top: 67%;
         }
       }
       @media(max-width:620px) {
         .indicators{
-          top: 67%;
+          top: 65%;
         }
       }
       @media(max-width:550px) {
         .indicators{
-          top: 65%;
+          top: 63%;
         }
       }
       @media(max-width:490px) {
         .indicators{
-          top: 63%;
+          top: 60%;
         }
       }
       @media(max-width:456px) {
